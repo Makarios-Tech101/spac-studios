@@ -13,7 +13,7 @@ import { Navigation  } from "swiper/modules";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Comment
+
 
 
 const showScrollTop = ref(false);
@@ -114,7 +114,7 @@ onMounted(() => {
                   </div>
                 </div>
                 <div class="about-us-image" data-aos="fade-up" data-aos-duration="2000">
-                     <img src="../../images/about-us.jpg">
+                     <img src="/images/about-us.jpg">
                 </div>
           </div>
       </div>
