@@ -129,8 +129,12 @@
         margin-top: 40px;
     }
 
+    .aboutus-section .about-us-image img {
+        width: 300px;
+    }
+
     /* PRICING PAGE */
-    .swiper-slide {
+    .pricing-page-container .swiper-slide {
         justify-content: center;
     }
 

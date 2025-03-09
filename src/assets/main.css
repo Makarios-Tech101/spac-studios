@@ -1064,7 +1064,7 @@ a.highlight:hover {
   background:#b1b1b1;
 }
 
-.swiper-slide {
+.pricing-page-container .swiper-slide {
   flex-shrink: 0;
   width: 100%;
   height: 100%;
