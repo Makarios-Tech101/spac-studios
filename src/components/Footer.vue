@@ -92,7 +92,7 @@
 
 .footer-container h4 {
     color: white;
-    font-size: 19px;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -103,7 +103,7 @@
 
 .footer-about-container p {
     color: rgb(240, 240, 240);
-    font-size: 14px;
+    font-size: 13px;
     line-height: 24px;
 }
 
@@ -114,8 +114,8 @@
 .quicklink-container a {
     color: rgb(240, 240, 240);
     display: block;
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 13px;
+    line-height: 24px;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;
@@ -173,7 +173,7 @@
 .copyright-container p {
     margin: 0px;
     color: rgb(210, 210, 210);
-    font-size: 12px;
+    font-size: 10px;
 }
 
 

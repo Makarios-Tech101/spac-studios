@@ -161,7 +161,7 @@ ul.dropdown-menu {
 .dropdown-menu li a {
   color: white;
   display: block;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .dropdown-menu li a:hover {
