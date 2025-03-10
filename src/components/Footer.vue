@@ -191,7 +191,18 @@
 
    .footer-container h4 {
        margin-bottom: 10px;
+       font-size: 15px;
     }
+
+    .footer-about-container p {
+        font-size: 12px;
+    }
+
+    .quicklink-container a {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
 
    .footer-about-container {
         width: 100%;

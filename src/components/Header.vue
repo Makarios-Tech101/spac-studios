@@ -233,13 +233,19 @@ ul.dropdown-menu {
 
   .header-menu ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 8px;
+  }
+
+  .header-menu ul a {
+    font-size: 12px;
   }
 
   .header-menu .dropdown-menu{
     gap: 0px;
     margin-left: -10px;
   }
+
+  
 
   .menu-toggle {
     display: block;
@@ -265,8 +271,10 @@ ul.dropdown-menu {
 
   .dropdown-menu li a {
       color: black !important;
-      padding: 10px 0px;
+      padding: 8px 0px;
+      font-size: 12px;
   }
+  
 
   .dropdown-menu .dropdown-item { 
       padding: 0px;
