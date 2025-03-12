@@ -219,12 +219,17 @@ ul.dropdown-menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 74px;
+    top: 60px;
     /* right: 0; */
     background: white;
     padding: 20px 0px;
     width: 90%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .header-logo img {
+    width: 70px;
+    margin-bottom: -10px;
   }
 
   .header-menu.open {

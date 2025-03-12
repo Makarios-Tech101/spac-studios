@@ -403,10 +403,10 @@ body {
 }
 
 .gallery-title h4 {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 25px;
+  line-height: 24px;
   text-transform: uppercase;
   padding-bottom: 15px;
   position: relative;
@@ -510,9 +510,9 @@ body {
   transform: scale(1.05);
 }
 
-.gallery-carousel-container .swiper {
-  /* height: 450px; */
-}
+/* .gallery-carousel-container .swiper {
+  /* height: 450px; 
+} */
 
 .gallery-carousel-container .image-title {
   position:absolute; /* Places the title on top of the image */
@@ -758,17 +758,17 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 0px auto;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   width: 90%;
 }
 
 .our-services-gallery-title h4 {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 25px;
+  line-height: 24px;
   text-transform: uppercase;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   margin-bottom: 0px;
   position: relative;
 }
@@ -802,9 +802,11 @@ body {
 .our-services-gallery-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 Columns */
-  grid-auto-rows: 400px; /* Adjust height */
+  grid-auto-rows: 350px; /* Adjust height */
   gap: 10px;
   margin-bottom: 30px;
+  height: 100%;
+  object-fit: cover;
 }
 
 .our-services-gallery-grid {
@@ -819,6 +821,7 @@ body {
   height: 100%; 
   cursor: pointer;
   object-fit: cover;
+  object-position: top;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -845,7 +848,7 @@ body {
 }
 
 .individual-services-banner-content  p{
-  font-size: 15px;
+  font-size: 13px;
   line-height: 24px;
   margin-top: 0px;
 }
@@ -857,9 +860,9 @@ body {
 .individual-services-banner-content a {
   background-color: black;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 11px;
   border: 1px solid white;
-  padding: 10px 20px;
+  padding: 7px 15px;
   cursor: pointer;
   /* margin-top: 40px; */
   text-transform: uppercase;
@@ -879,7 +882,7 @@ body {
   margin-bottom: 70px;
 }
 .aboutus-section .about-us-image img {
-   width: 450px;
+   width: 400px;
    /* border-right: 15px solid black; */
 }
 
@@ -897,13 +900,14 @@ body {
 
 .about-us-text p{
   margin-top: 0px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 25px;
   color: #333;
 }
 
 .about-us-text h2{
   margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .page-section {
@@ -919,10 +923,10 @@ body {
 }
 
 .page-title h4 {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0;
-  line-height: 25px;
+  line-height: 24px;
   text-transform: uppercase;
   padding-bottom: 15px;
   position: relative;
@@ -995,7 +999,7 @@ body {
 }
 
 .pricing-title {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
 }
@@ -1012,7 +1016,7 @@ body {
 }
 
 .price {
-  font-size: 30px;
+  font-size: 18px;
   color: goldenrod;
 }
 
@@ -1031,7 +1035,7 @@ body {
 }
 
 .pricing-features li {
-  font-size: 15px;
+  font-size: 13px;
   padding: 6px 0px;
 }
 
@@ -1043,10 +1047,10 @@ body {
   color: white;
   text-decoration: none;
   border: none;
-  padding: 10px 20px;
+  padding: 7px 14px;
   width: 100%;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 11px;
   transition: background 0.3s;
 }
 
@@ -1058,10 +1062,10 @@ a.highlight {
   background: #F9F9F9;
   color: black;
   border: none;
-  padding: 10px 20px;
+  padding: 7px 14px;
   width: 100%;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 11px;
   transition: background 0.3s;
 }
 
@@ -1105,8 +1109,8 @@ a.highlight:hover {
 
 .contact-us-text p{
   margin-top: 0px;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 13px;
+  line-height: 24px;
   color: #333;
 }
 
@@ -1129,7 +1133,7 @@ a.highlight:hover {
   padding: 10px;
   border: 1px solid #ccc;
   /* border-radius: 5px; */
-  font-size: 15px;
+  font-size: 13px;
   box-sizing: border-box;
   background-color: #F9F9F9;
 
@@ -1144,13 +1148,21 @@ a.highlight:hover {
   margin-top: 20px;
 }
 
+.contact-us-text label {
+  font-size: 13px;
+}
+
+.contact-us-text input::placeholder {
+  font-size: 13px;
+}
+
 .contact-us-text button  {
   background-color: black;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 11px;
   text-decoration: none;
   border: 1px solid white;
-  padding: 10px 20px;
+  padding: 7px 14px;
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 500;
@@ -1189,6 +1201,7 @@ a.highlight:hover {
 
 .contact-us-svg p {
   margin: 0px 0px 0px 10px;
+  font-size: 13px;
 }
 
 .contact-us-svg svg {

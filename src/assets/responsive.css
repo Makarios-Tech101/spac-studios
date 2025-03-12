@@ -224,10 +224,25 @@
         background-position: 100% 110%;
         
     }
+
+    .individual-services-banner-content a {
+        background-color: black;
+        color: #ffffff;
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+
+    .individual-services-banner-content  p{
+        font-size: 12px;
+        line-height: 23px;
+
+    }
     
     .our-services-gallery-grid-container {
-        grid-template-columns: repeat(2, 1fr); 
+        height: 100%;
+        grid-template-columns: repeat(1, 1fr); 
         grid-auto-rows: 300px; 
+        object-fit: cover;
     }
     .our-services-gallery-grid img {
         width: 100%;
@@ -261,7 +276,20 @@
     }
 
     .aboutus-section .about-us-image img {
-        width: 300px;
+        width: 250px;
+    }
+
+    .about-us-text p{
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .about-us-text h2{
+        font-size: 15px;
+    }
+
+    .page-title h4 {
+        font-size: 15px;
     }
 
     /* PRICING PAGE */
@@ -286,7 +314,27 @@
         /* border-right: 15px solid black; */
     }
 
-  
+    /* SERVICES PAGE */
+    .our-services-gallery-title h4 {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+    .gallery-title h4 {
+        font-size: 15px;
+    }
+
+    .contact-us-text p{
+        margin-top: 0px;
+        font-size: 12px;
+        line-height: 23px;
+        color: #333;
+    }
+
+    .contact-us-svg p {
+        margin: 0px 0px 0px 10px;
+        font-size: 12px;
+    }
     
 }
 
