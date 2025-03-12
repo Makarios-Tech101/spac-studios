@@ -29,7 +29,7 @@ const testimonials = [
     name: "BLESSING OGODOGU",
     role: "Software Developer and Founder",
     message:
-      "The process was smooth, and the results were outstanding! He knew exactly how to bring out the best in each shot, and now my LinkedIn profile looks so much more professional!. Looking forward to working with Spac Studio again.",
+      "The process was smooth, and the results were outstanding! He knew exactly how to bring out the best in each shot, and now my LinkedIn profile looks so much more professional!. Looking forward to working with Spac Studios again.",
   },
   {
     image: "/images/img3.jpg",
@@ -50,7 +50,7 @@ const testimonials = [
     name: "PASCAL EKEH",
     role: "Senior Advocate, Deloitte",
     message:
-      "For one who approached Spac Studio unprepared, I got the support I needed. ",
+      "For one who approached Spac Studios unprepared, I got the support I needed. ",
   }
 ];
 
@@ -197,7 +197,7 @@ onUnmounted(() => {
           <h4>Reach Out To Us</h4>
           <h6>456 Main street, Buckingham Av. XV34 London</h6>
           <p>+44 7507 971045</p>
-          <p>hello@spacstudio.com</p>
+          <p>info@spacstudios.co.uk</p>
           <router-link to="/contact">
             <button>Contact Form</button>
          </router-link>

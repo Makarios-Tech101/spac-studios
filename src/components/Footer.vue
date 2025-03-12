@@ -3,10 +3,13 @@
 <template>
     <footer>
        <div class="footer-first-section">
+            <div class="footer-logo">
+                    <img src="/images/floggo.png">
+            </div>
             <div class="footer-container">
                 <div class="footer-about-container">
                     <h4>ABOUT</h4>
-                    <p> Spac Studiois more than just a photography brand: 
+                    <p> Spac Studios is more than just a photography brand: 
                         we are storytellers, capturing emotions, light, 
                         and artistry in their purest forms.
                         From elegant portraits to breathtaking landscapes, 
@@ -22,7 +25,7 @@
                         <router-link to="/">Home</router-link>
                     </li>
                     <li>
-                        <router-link to="/about-us">About Us</router-link>
+                        <router-link to="/about-us">About</router-link>
                     </li>
                     <li>
                         <router-link to="/birthday-shoots">Birthday Shoot</router-link>
@@ -67,7 +70,7 @@
        <div class="footer-second-section">
             <div class="copyright-container">
                 <p>
-                    COPYRIGHT © 2024 SPAC STUDIO. ALL RIGHT RESERVED. POWERED BY MAROSN INTELLIGENCE
+                    COPYRIGHT © 2024 SPAC STUDIOS. ALL RIGHT RESERVED. POWERED BY MAROSN INTELLIGENCE
                 </p>
             </div>
        </div>
@@ -79,7 +82,7 @@
 
 .footer-first-section {
     background-color: rgb(21, 21, 21);
-    padding: 60px 0px 20px 0px;
+    padding: 40px 0px 20px 0px;
 }
 .footer-container {
     display: flex; 
@@ -88,6 +91,16 @@
     margin: auto;
     width: 90%;
     
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 150px;
+    cursor: pointer;
 }
 
 .footer-container h4 {

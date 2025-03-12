@@ -19,7 +19,7 @@ const toggleDropdown = () => {
         <div class="navigation">
             <div class="header-logo">
               <router-link to="/">
-                 <img src="/images/logo.jpg">
+                 <img src="/images/loggo.png">
               </router-link>   
             </div>
             <Transition name="slide-fade">
@@ -29,10 +29,10 @@ const toggleDropdown = () => {
                       <router-link to="/">Home</router-link>
                     </li>
                     <li>
-                      <router-link to="/about-us">About Us</router-link>
+                      <router-link to="/about-us">About</router-link>
                     </li>
                     <li class="dropdown" >
-                      <a href="#"  @click.prevent="toggleDropdown"> Our Services <span style="font-size: 15px;">&#x2BC6;</span>  </a>
+                      <a href="#"  @click.prevent="toggleDropdown">Services <span style="font-size: 15px;">&#x2BC6;</span>  </a>
                       <ul class="dropdown-menu" :class="{ 'open': isDropdownOpen }">
                           <li class="dropdown-item"><router-link to="/portraits-and-headshots">Portraits and Headshots</router-link></li>
                           <li class="dropdown-item"><router-link to="/wedding-and-events">Wedding and Events</router-link></li>
@@ -90,7 +90,7 @@ header {
 
 /* Logo */
 .header-logo img {
-  width: 150px;
+  width: 100px;
   margin-bottom: -10px;
 }
 
@@ -219,7 +219,7 @@ ul.dropdown-menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 44px;
+    top: 74px;
     /* right: 0; */
     background: white;
     padding: 20px 0px;

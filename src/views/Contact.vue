@@ -230,7 +230,7 @@ onMounted(() => {
                         <div class ="contact-us-svg">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24"><path fill="#fff" d="M22 4H2v16h20zm-2 4l-8 5l-8-5V6l8 5l8-5z"/>
                             </svg>
-                            <p>hello@spacstudio.com</p>
+                            <p>info@spacstudios.co.uk</p>
                         </div>
                      </div>
                      <div class="contact-page-map">

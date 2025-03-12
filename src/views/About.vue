@@ -24,7 +24,7 @@ const testimonials = [
     name: "BLESSING OGODOGU",
     role: "Software Developer and Founder",
     message:
-      "The process was smooth, and the results were outstanding! He knew exactly how to bring out the best in each shot, and now my LinkedIn profile looks so much more professional!. Looking forward to working with Spac Studio again.",
+      "The process was smooth, and the results were outstanding! He knew exactly how to bring out the best in each shot, and now my LinkedIn profile looks so much more professional!. Looking forward to working with Spac Studios again.",
   },
   {
     image: "/images/img3.jpg",
@@ -45,7 +45,7 @@ const testimonials = [
     name: "PASCAL EKEH",
     role: "Senior Advocate, Deloitte",
     message:
-      "For one who approached Spac Studio unprepared, I got the support I needed. ",
+      "For one who approached Spac Studios unprepared, I got the support I needed. ",
   }
 ];
 
@@ -81,7 +81,7 @@ onMounted(() => {
           <div class="page-title">
               <div>
                   <h4>
-                     About Us
+                     About Spac Studios
                   </h4>
               </div>
               <div>
@@ -93,7 +93,7 @@ onMounted(() => {
           <div class="aboutus-container">
                 <div class="about-us-text">
                   <p>
-                    At Spac Studio, we believe that every picture tells a story. 
+                    At Spac Studios, we believe that every picture tells a story. 
                     Our approach is simple: we blend creativity with technical 
                     expertise to deliver stunning, high-quality images. We take time to understand
                     our clients' vision, ensuring every shot reflects their personality, emotions, and special moments.

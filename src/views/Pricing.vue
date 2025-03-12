@@ -164,7 +164,7 @@ onMounted(() => {
                 <h4>Reach Out To Us</h4>
                 <h6>456 Main street, Buckingham Av. XV34 London</h6>
                 <p>+44 7507 971045</p>
-                <p>hello@spacstudio.com</p>
+                <p>info@spacstudios.co.uk</p>
                 <router-link to="/contact">
                     <button>Contact Form</button>
                 </router-link>

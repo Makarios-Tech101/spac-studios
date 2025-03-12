@@ -62,14 +62,14 @@ watchEffect(() => {
   typeTitle(slides.value[currentSlideIndex.value].title);
 });
 
-const images = ref([
-  { src: "/images/img12.jpg", title: "Studio Photography" },
-  { src: "/images/service1.jpg", title: "Wedding Photography" },
-  { src: "/images/service2.jpg", title: "Child(ren) Photography" },
-  { src: "/images/service3.jpg", title: "Fashion Photography" },
-  { src: "/images/img8.jpg", title: "Outdoor Shoots" },
-  { src: "/images/product.jpg", title: "Product Photography" },
-]);
+// const images = ref([
+//   { src: "/images/img12.jpg", title: "Studio Photography" },
+//   { src: "/images/service1.jpg", title: "Wedding Photography" },
+//   { src: "/images/service2.jpg", title: "Child(ren) Photography" },
+//   { src: "/images/service3.jpg", title: "Fashion Photography" },
+//   { src: "/images/img8.jpg", title: "Outdoor Shoots" },
+//   { src: "/images/product.jpg", title: "Product Photography" },
+// ]);
 
 const testimonials = [
   {
@@ -77,7 +77,7 @@ const testimonials = [
     name: "BLESSING OGODOGU",
     role: "Software Developer and Founder",
     message:
-      "The process was smooth, and the results were outstanding! He knew exactly how to bring out the best in each shot, and now my LinkedIn profile looks so much more professional!. Looking forward to working with Spac Studio again.",
+      "The process was smooth, and the results were outstanding! He knew exactly how to bring out the best in each shot, and now my LinkedIn profile looks so much more professional!. Looking forward to working with Spac Studios again.",
   },
   {
     image: "/images/img3.jpg",
@@ -98,7 +98,7 @@ const testimonials = [
     name: "PASCAL EKEH",
     role: "Senior Advocate, Deloitte",
     message:
-      "For one who approached Spac Studio unprepared, I got the support I needed. ",
+      "For one who approached Spac Studios unprepared, I got the support I needed. ",
   }
 ];
 
@@ -113,18 +113,18 @@ const testimonials = [
 //   { name: "Product Photography", img: "/images/product.jpg" },
 // ]);
 const gallerySlides = ref([
-  { img: "/images/img9.jpg" },
-  { img: "/images/service2.jpg" },
-  { img: "/images/img8.jpg" },
-  { img: "/images/service1.jpg" },
-  { img: "/images/img11.jpg" },
-  { img: "/images/img14.jpg" },
-  { img: "/images/service4.jpg" },
-  { img: "/images/jpeg-optimizer_banner-img1.jpg" },
-  { img: "/images/img_book.jpg" },
-  { img: "/images/product.jpg" },
-  { img: "/images/img17.jpg" },
+  { img: "/images/service2.jpg", name: "Child Photography", route: "/child-photography" },
+  { img: "/images/img8.jpg", name: "Fashion Photography", route: "/fashion-photography" },
+  { img: "/images/service1.jpg", name: "Birthday Shoot", route: "/birthday-shoots" },
+  { img: "/images/jpeg-optimizer_banner-img1.jpg", name: "Headshot", route: "/portraits-and-headshots" },
+  { img: "/images/img_book.jpg", name: "Studio Shoot", route: "/portraits-and-headshots" },
+  { img: "/images/img17.jpg", name: "Birthday Shoot", route: "/birthday-shoots" },
+  { img: "/images/img18.jpg", name: "Family Portrait", route: "/portraits-and-headshots" },
+  { img: "/images/img20.jpg", name: "Child Photography", route: "/child-photography" },
+  { img: "/images/img12.jpg", name: "Studio Shoot", route:"/portraits-and-headshots" },
+  { img: "/images/product.jpg", name: "Product Photography", route: "/product-photography" },
 ]);
+
 
 
 
@@ -273,7 +273,7 @@ onUnmounted(() => {
        <div class="our-service-title">
             <div>
               <h4>
-                Our Services
+                Services
               </h4>
             </div>
             <div>
@@ -282,24 +282,88 @@ onUnmounted(() => {
        </div>
        <div class="our-service-grid-section">
          <div>
-           <div class="service-grid">
-              <div 
-                v-for="(image, index) in images" 
-                :key="index" 
-                class="grid-item group cursor-pointer" 
-                @click="openModal(image)"
+            <div class="gallery-carousel-container">
+              <swiper
+                :modules="[Autoplay]"
+                :slides-per-view="4"
+                :space-between="0"
+                :loop="true"
+                :breakpoints="{
+                    320: { slidesPerView: 1 },  
+                    600: { slidesPerView: 2 },  
+                    768: { slidesPerView: 3 },  
+                    992: { slidesPerView: 3 },  
+                    1024: { slidesPerView: 4 }   
+                }"
+                :autoplay="{ delay: 1500, disableOnInteraction: false }"
+                class="gallery-carousel-slider"
                 data-aos="fade-up" data-aos-duration="2000"
               >
-                <img :src="image.src" alt="Services Image" class="image">
-              
-                <!-- Hover Overlay -->
-                <div class="hover-overlay">
-                  <span class="overlay-text">{{ image.title }}</span>
+              <swiper-slide v-for="(gallerySlide, index) in gallerySlides" :key="index">
+                <div class="gallery-carousel-card">
+                  <router-link :to="gallerySlide.route">
+                    <img :src="gallerySlide.img" :alt="gallerySlide.name" class="gallery-carousel-image" />
+                  </router-link>
+                  <div class="image-title">{{ gallerySlide.name }}</div> <!-- Title under image -->
                 </div>
-              </div>  
-           </div>
+              </swiper-slide>
+              </swiper>
+            </div>
          </div>
        </div>
+    </div>
+    <div class="pricing-section">
+      <div class="our-service-title">
+            <div>
+              <h4>
+                Pricing
+              </h4>
+            </div>
+            <div>
+    
+            </div>
+       </div>
+        <div class="pricing-container">
+            <div class="pricing-accordion">
+              <div v-for="(option, index) in pricingOptions" :key="index" class="accordion-item">
+                <div class="accordion-header" @click="toggleAccordion(index)">
+                  <!-- <h3>{{ option.title }} <span class="price">{{ option.price }}</span></h3> -->
+                  <h3>{{ option.title }}</h3>
+                  <span class="icon">{{ activeIndex === index ? "-" : "+" }}</span>
+                </div>
+                <div class="accordion-content" v-if="activeIndex === index">
+                  <router-link to="/pricing">
+                    <ul>
+                       <li v-for="(item, i) in option.description" :key="i">{{ item }}</li>
+                    </ul>
+                  </router-link>
+                </div>
+              </div>
+            </div>
+            <div class="pricing-image">
+                <img src="/images/pricing_image.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="booknow-section">
+      <div class="booknow-container">
+         <div class="booknow-empty">
+
+         </div>
+         <div class="booknow-introduction">
+            <span>Capture . Frame . Illuminate </span>
+            <p>
+              Every picture tells a story, 
+              and at Spac Studios, we turn fleeting 
+              moments into timeless memories. Whether 
+              it's a portrait, an event, or a brand shoot, 
+              we bring creativity and passion to every frame.
+            </p>
+            <a href="https://wa.me/447507971045" target="_blank" class="book-now">
+              Book Now
+            </a>
+         </div>
+      </div>
     </div>
     <div class="testimonial-section">
        <div class="testimonial-title">
@@ -342,99 +406,39 @@ onUnmounted(() => {
         </swiper>
        </div>
     </div>
-    <div class="booknow-section">
-      <div class="booknow-container">
-         <div class="booknow-empty">
-
-         </div>
-         <div class="booknow-introduction">
-            <span>Capture . Frame . Illuminate </span>
+    <div class="aboutme-section">
+        <div class="aboutme-container">
+          <div class="aboutme-image">
+            <img src="/images/aboutme.jpg">
+          </div>
+          <div class="aboutme-content">
+            <h4>
+               ABOUT ME: OLUMIDE OYEBADE - <span>UK PHOTOGRAPHER</span>
+            </h4>
             <p>
-              Every picture tells a story, 
-              and at Spac Studio, we turn fleeting 
-              moments into timeless memories. Whether 
-              it's a portrait, an event, or a brand shoot, 
-              we bring creativity and passion to every frame.
+              Hello! my name is Olumide Oyebade, the creative eye behind the lens. 
+              I don't just take pictures: I capture emotions, stories, and the little 
+              details that make every moment special. Whether it's the sparkle in your 
+              eyes during a portrait shoot, the laughter at a birthday party, or the quiet,
+               beautiful moments of a wedding day, I believe photography is about preserving memories 
+              that last a lifetime.
             </p>
-            <a href="https://wa.me/447507971045" target="_blank" class="book-now">
-              Book Now
-            </a>
-         </div>
-      </div>
-    </div>
-    <div class="gallery-carousel-section">
-       <div class="our-service-title">
-            <div>
-              <h4>
-                Gallery
-              </h4>
-            </div>
-            <div>
-    
-            </div>
-       </div>
-       <div class="gallery-carousel-container">
-          <swiper
-            :modules="[Autoplay]"
-            :slides-per-view="4"
-            :space-between="0"
-            :loop="true"
-            :breakpoints="{
-                320: { slidesPerView: 1 },  
-                600: { slidesPerView: 2 },  
-                768: { slidesPerView: 3 },  
-                992: { slidesPerView: 3 },  
-                1024: { slidesPerView: 4 }   
-            }"
-            :autoplay="{ delay: 1500, disableOnInteraction: false }"
-            class="gallery-carousel-slider"
-            data-aos="fade-up" data-aos-duration="2000"
-          >
-            <swiper-slide v-for="(gallerySlide, index) in gallerySlides" :key="index">
-              <div class="gallery-carousel-card">
-                <router-link to="/gallery">
-                  <img :src="gallerySlide.img" :alt="gallerySlide.name" class="gallery-carousel-image" />
-                </router-link>
-
-                <!-- <div class="overlay">
-                  <h3>{{ gallerySlide.name }}</h3>
-                </div> -->
-              </div>
-            </swiper-slide>
-          </swiper>
-       </div>
-    </div>
-    <div class="pricing-section">
-      <div class="our-service-title">
-            <div>
-              <h4>
-                Pricing
-              </h4>
-            </div>
-            <div>
-    
-            </div>
-       </div>
-        <div class="pricing-container">
-            <div class="pricing-accordion">
-              <div v-for="(option, index) in pricingOptions" :key="index" class="accordion-item">
-                <div class="accordion-header" @click="toggleAccordion(index)">
-                  <!-- <h3>{{ option.title }} <span class="price">{{ option.price }}</span></h3> -->
-                  <h3>{{ option.title }}</h3>
-                  <span class="icon">{{ activeIndex === index ? "-" : "+" }}</span>
-                </div>
-                <div class="accordion-content" v-if="activeIndex === index">
-                  <router-link to="/pricing">
-                    <ul>
-                       <li v-for="(item, i) in option.description" :key="i">{{ item }}</li>
-                    </ul>
-                  </router-link>
-                </div>
-              </div>
-            </div>
-            <div class="pricing-image">
-                <img src="/images/pricing_image.jpg">
-            </div>
+            <p>
+              My journey into photography started with a simple love for storytelling. 
+              Over the years, I have worked with amazing individuals, couples, families,  
+              helping them freeze time in the most beautiful way possible. My style? Authentic, 
+              timeless, and a little bit artistic because your moments deserve more than just ordinary snapshots.
+            </p>
+            <p>
+              Beyond photography, I love meeting new people, hearing their stories, and creating 
+              an experience that's fun, comfortable, and truly YOU. 
+              No awkward poses, no forced smiles, just real, beautiful moments captured in a way that feels natural.
+            </p>
+            <p>
+              So, if you are looking for a photographer who makes the process easy, enjoyable, and filled 
+              with good vibes, you are in the right place! Let's make some magic together. <b>Book a session today!📸😉</b>
+            </p>
+          </div>
         </div>
     </div>
     <div class="contact-section">
@@ -446,7 +450,7 @@ onUnmounted(() => {
          <h4>Reach Out To Us</h4>
          <h6>456 Main street, Buckingham Av. XV34 London</h6>
          <p>+44 7507 971045</p>
-         <p>hello@spacstudio.com</p>
+         <p>info@spacstudios.co.uk</p>
          <router-link to="/contact">
             <button>Contact Form</button>
          </router-link>
@@ -478,5 +482,76 @@ onUnmounted(() => {
     </div>  
   </div>
 </template>
+
+<!-- <div class="service-grid">
+  <div 
+    v-for="(image, index) in images" 
+    :key="index" 
+    class="grid-item group cursor-pointer" 
+    @click="openModal(image)"
+    data-aos="fade-up" data-aos-duration="2000"
+  >
+    <img :src="image.src" alt="Services Image" class="image">
+  
+   
+    <div class="hover-overlay">
+      <span class="overlay-text">{{ image.title }}</span>
+    </div>
+  </div>  
+</div> -->
+
+<!-- .service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 Columns */
+  grid-auto-rows: 500px; /* Adjust height */
+  gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+
+
+
+/* Hover Overlay */
+.hover-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.grid-item:hover .hover-overlay {
+  opacity: 1;
+}
+
+.grid-item span{
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+} -->
 
 
