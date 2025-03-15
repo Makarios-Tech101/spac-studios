@@ -14,12 +14,8 @@ import "aos/dist/aos.css";
 
 
 const serviceImages= ref([
-   { src: "/images/img14.jpg"},
-   { src: "/images/service4.jpg"},
-   { src: "/images/service1.jpg"},
    { src: "/images/img17.jpg"},
    { src: "/images/img16.jpg"}
-  
 
 ]);
 

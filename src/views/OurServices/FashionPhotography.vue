@@ -14,13 +14,8 @@ import "aos/dist/aos.css";
 
 
 const serviceImages= ref([
-   { src: "/images/img8.jpg"},
-   { src: "/images/img11.jpg"},
-   { src: "/images/img_book.jpg"},
    { src: "/images/img14.jpg"},
-   { src: "/images/img12.jpg"}
-  
-
+   { src: "/images/img15.jpg"},
 ]);
 
 const testimonials = [

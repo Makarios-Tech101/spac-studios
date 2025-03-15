@@ -27,17 +27,17 @@ const slides = ref([
   {
     title: "CAPTURE THE MOMENT",
     description: "Preserve your special moments with our professional photography services.",
-    image: "/images/banner-img2.jpg",
+    image: "/images/banner-img6.jpg",
   },
   {
     title: "CREATIVE STUDIO SHOOTS",
     description: "Explore artistic expressions with our expert studio photography.",
-    image: "/images/banner-img6.jpg",
+    image: "/images/banner-img2.jpg",
   },
   {
     title: "EVENT COVERAGE EXPERTS",
     description: "From corporate events to private celebrations, we capture it all.",
-    image: "/images/banner-img3.jpg",
+    image: "/images/banner-img6.jpg",
   },
 ]);
 
@@ -113,16 +113,13 @@ const testimonials = [
 //   { name: "Product Photography", img: "/images/product.jpg" },
 // ]);
 const gallerySlides = ref([
-  { img: "/images/service2.jpg", name: "Child Photography", route: "/child-photography" },
-  { img: "/images/img8.jpg", name: "Fashion Photography", route: "/fashion-photography" },
-  { img: "/images/service1.jpg", name: "Birthday Shoot", route: "/birthday-shoots" },
-  { img: "/images/jpeg-optimizer_banner-img1.jpg", name: "Headshot", route: "/portraits-and-headshots" },
-  { img: "/images/img_book.jpg", name: "Studio Shoot", route: "/portraits-and-headshots" },
-  { img: "/images/img17.jpg", name: "Birthday Shoot", route: "/birthday-shoots" },
-  { img: "/images/img18.jpg", name: "Family Portrait", route: "/portraits-and-headshots" },
-  { img: "/images/img20.jpg", name: "Child Photography", route: "/child-photography" },
+  { img: "/images/img23.jpg", name: "Outdoor Shoot", route: "/outdoor-shoots" },
+  { img: "/images/img24.jpg", name: "Child Photography", route: "/child-photography" },
+  { img: "/images/img26.jpg", name: "Fashion Photography", route: "/fashion-photography" },
+  { img: "/images/img16.jpg", name: "Birthday Shoot", route: "/birthday-shoots" },
+  { img: "/images/img25.jpg", name: "Headshot", route: "/portraits-and-headshots" },
   { img: "/images/img12.jpg", name: "Studio Shoot", route:"/portraits-and-headshots" },
-  { img: "/images/product.jpg", name: "Product Photography", route: "/product-photography" },
+  { img: "/images/img27.jpg", name: "Event photography", route:"/corporate-events" },
 ]);
 
 
@@ -154,58 +151,62 @@ const pricingOptions = ref([
     title: "Lite Package",
     // price: "£99",
     description: [
-      "- 1 Hour Shoot ",
-      "- 1 Cloth ",
-      "- 3 Hi-Res Retouched Images ",
-      "- Styling & Posing guide",
-      "- One person",
-      "- £70"
+      "Corporate Headshots ",
+      "45 mins Shoot ",
+      "1 Outfit ",
+      "3 Hi-Res Retouched Images ",
+      "1 individual",
+      "Digital Access To Image Files ",
+      " £70"
     ],
   },
   {
     title: "Classic Package",
     // price: "£150",
     description: [
-      "- 1-2 Hour Shoot",
-      "- 2 Cloth Change",
-      "- 7 Hi-Res Retouched Images ",
-      "- Styling & Posing Guide",
-      "- Up To 2 Persons",
-      "- £150"
+      "Studio | Birthday | Outdoor ",
+      "⁠90 mins Shoot",
+      "2 Outfits",
+      "7 Hi-Res Retouched Images ",
+      "1 Individual ",
+      "Digital Access To Image Files ",
+      "£150"
     ],
   },
   {
     title: "Deluxe Package",
     // price: "£250",
     description: [
-      "- 2 Hours Shoot",
-      "- 3 Cloth Change",
-      "- 12 Hi-Res Retouched Images ",
-      "- Styling & Posing gGide",
-      "- Up To 4 Persons",
-      "- £30 for every additional person",
-      "- £250",
+      "Family Shoot",
+      "120 mins Shoot",
+      "Up To 3 Outfits",
+      "15 Hi-Res Retouched Images ",
+      "Up To 4 Individuals ",
+      "Extra £30 For 4+ Individuals",
+      "⁠Styling & Posing Guide",
+      "Digital access to image files",
+      "£280",
     ],
   },
   {
     title: "Event Package",
     // price: "",
     description: [
-      "- 1st Hour £150",
-      "- 15 Edited Photos Per Hour",
-      "- Additional Hour £70",
+      "1st Hour £150",
+      "15 Edited Photos Per Hour",
+      "Additional Hour £70",
     ],
   },
   {
     title: "Other Charges ",
     // price: "",
     description: [
-      "- Travel Fee For Home Shoot - Beyond 10 Mile Radius",
-      "- Studio Rental Charges",
-      "- Extra Edited Images @£20",
-      "- 30+ Digital Unedited Images @£30",
-      "- All Photos Sent Via Free Download Link. USB Delivered  Images Attracts Extra @£20 Charge",
-      "- Additional Charges Will Be Incurred For Time Extension Beyond Agreed Hours",
+      "Travel Fee For Home Shoot - Beyond 10 Mile Radius",
+      "Studio Rental Charges",
+      "Extra Edited Images @£20",
+      "30+ Digital Unedited Images @£30",
+      "All Photos Sent Via Free Download Link. USB Delivered  Images Attracts Extra @£20 Charge",
+      "Additional Charges Will Be Incurred For Time Extension Beyond Agreed Hours",
     ],
   },
 ]);
@@ -290,7 +291,7 @@ onUnmounted(() => {
                 :loop="true"
                 :breakpoints="{
                     320: { slidesPerView: 1 },  
-                    600: { slidesPerView: 2 },  
+                    500: { slidesPerView: 2 },  
                     768: { slidesPerView: 3 },  
                     992: { slidesPerView: 3 },  
                     1024: { slidesPerView: 4 }   
@@ -334,7 +335,11 @@ onUnmounted(() => {
                 <div class="accordion-content" v-if="activeIndex === index">
                   <router-link to="/pricing">
                     <ul>
-                       <li v-for="(item, i) in option.description" :key="i">{{ item }}</li>
+                       <li v-for="(item, i) in option.description" :key="i">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11" color="currentColor"/>
+                        </svg>
+                        {{ item }}
+                      </li>
                     </ul>
                   </router-link>
                 </div>
@@ -344,6 +349,9 @@ onUnmounted(() => {
                 <img src="/images/pricing_image.jpg">
             </div>
         </div>
+    </div>
+    <div class="gallery">
+
     </div>
     <div class="booknow-section">
       <div class="booknow-container">
@@ -409,7 +417,7 @@ onUnmounted(() => {
     <div class="aboutme-section">
         <div class="aboutme-container">
           <div class="aboutme-image">
-            <img src="/images/aboutme.jpg">
+            <img src="/images/about-us1.png">
           </div>
           <div class="aboutme-content">
             <h4>

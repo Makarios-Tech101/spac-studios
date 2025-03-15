@@ -38,6 +38,9 @@ const galleries = ref([
   { src: "/images/img4.jpg", title: "Family Portrait" },
   { src: "/images/img9.jpg", title: "Fashion Photography" },
   { src: "/images/img10.jpg", title: "Fashion Photography" },
+  { src: "/images/img23.jpg", title: "Outdoor Shoot" },
+  { src: "/images/img23.jpg", title: "Headshot" },
+  { src: "/images/img15.jpg", title: "Fashion Photography" },
   
 ]);
 

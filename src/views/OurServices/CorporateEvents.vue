@@ -14,7 +14,7 @@ import "aos/dist/aos.css";
 
 
 const serviceImages= ref([
-   { src: "/images/jpeg-optimizer_banner-img1.jpg",},
+   { src: "/images/img27.jpg",},
 
 ]);
 

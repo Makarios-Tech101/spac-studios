@@ -58,9 +58,9 @@ const toggleDropdown = () => {
             </Transition>
                  <!-- Mobile Menu Toggle -->
             <button class="menu-toggle" @click="toggleMenu">
-               <svg v-if="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"><path fill="#000" d="M3.563 6a.75.75 0 0 1 .75-.75h16a.75.75 0 0 1 0 1.5h-16a.75.75 0 0 1-.75-.75m0 12a.75.75 0 0 1 .75-.75h16a.75.75 0 0 1 0 1.5h-16a.75.75 0 0 1-.75-.75m.75-6.75a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5z"/>
+               <svg v-if="!isMenuOpen" xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 25 24"><path fill="#000" d="M3.563 6a.75.75 0 0 1 .75-.75h16a.75.75 0 0 1 0 1.5h-16a.75.75 0 0 1-.75-.75m0 12a.75.75 0 0 1 .75-.75h16a.75.75 0 0 1 0 1.5h-16a.75.75 0 0 1-.75-.75m.75-6.75a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5z"/>
                </svg>
-               <svg v-else xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"/>
+               <svg v-else xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 24 24"><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6.758 17.243L12.001 12m5.243-5.243L12 12m0 0L6.758 6.757M12.001 12l5.243 5.243"/>
                </svg>
             </button>
        </div>
@@ -204,6 +204,10 @@ ul.dropdown-menu {
   opacity: 1;
 }
 
+@media (max-width: 400px) {
+
+}
+
 @media (min-width: 993px) {
   .dropdown:hover .dropdown-menu {
     display: block;
@@ -219,16 +223,17 @@ ul.dropdown-menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 60px;
+    top: 67px;
     /* right: 0; */
     background: white;
     padding: 20px 0px;
+    border-top: 1px solid white;;
     width: 90%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   }
 
   .header-logo img {
-    width: 70px;
+    width: 90px;
     margin-bottom: -10px;
   }
 

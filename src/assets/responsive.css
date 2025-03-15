@@ -19,6 +19,13 @@
         width: 55%; 
     }
 
+    .text-content {
+        position: relative;
+        margin-top: 30px;
+        z-index: 2;
+        max-width: 250px;
+    }
+
     .text-content h1{
         line-height: 25px;
         font-size: 20px;
@@ -50,10 +57,13 @@
         grid-auto-rows: 470px; 
     }
 
-    .gallery-carousel-card {
-        height: 270px;
+    /* .gallery-carousel-card {
+        height: 100%;
        
-    }
+    } */
+
+    
+
     .grid-item img {
         width: 100%;
         height: 100%;
@@ -172,7 +182,7 @@
     }
 
     .aboutme-container .aboutme-image img {
-        width: 250px;
+        width: 200px;
      
     }
 
@@ -241,7 +251,7 @@
     .our-services-gallery-grid-container {
         height: 100%;
         grid-template-columns: repeat(1, 1fr); 
-        grid-auto-rows: 300px; 
+        grid-auto-rows: 500px; 
         object-fit: cover;
     }
     .our-services-gallery-grid img {
@@ -339,7 +349,13 @@
 }
 
 
-@media (max-width:400px){
+@media (max-width:499px){
+
+    .gallery-carousel-card img {
+        width: 100%;
+        height: 470px;
+        
+    }
    
     /* .our-service-title h4 {
         font-size: 18px;
@@ -375,7 +391,13 @@
     }
 
 
-   
+    .booknow-section {
+        height: 270px;
+    }
+      
+    .booknow-container {
+        height: 270px;
+    }
 
    
 
