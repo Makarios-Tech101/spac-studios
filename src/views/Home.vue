@@ -321,7 +321,7 @@ onUnmounted(() => {
               </h4>
             </div>
             <div>
-    
+              
             </div>
        </div>
         <div class="pricing-container">
@@ -350,8 +350,10 @@ onUnmounted(() => {
             </div>
         </div>
     </div>
-    <div class="gallery">
+    <div class="home-gallery-section">
+      <div>
 
+      </div>
     </div>
     <div class="booknow-section">
       <div class="booknow-container">
@@ -417,7 +419,7 @@ onUnmounted(() => {
     <div class="aboutme-section">
         <div class="aboutme-container">
           <div class="aboutme-image">
-            <img src="/images/about-us1.png">
+            <img src="../../images/about-us1.png">
           </div>
           <div class="aboutme-content">
             <h4>
