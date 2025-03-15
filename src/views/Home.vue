@@ -419,7 +419,7 @@ onUnmounted(() => {
     <div class="aboutme-section">
         <div class="aboutme-container">
           <div class="aboutme-image">
-            <img src="../../images/about-us1.png">
+            <img src="/images/home_aboutme.png">
           </div>
           <div class="aboutme-content">
             <h4>
