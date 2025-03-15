@@ -345,6 +345,10 @@
         margin: 0px 0px 0px 10px;
         font-size: 12px;
     }
+
+    .home-gallery-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller tablets */
+    }
     
 }
 
@@ -353,7 +357,9 @@
 
     .gallery-carousel-card img {
         width: 100%;
-        height: 520px;
+        height: 500px;
+        object-fit: cover;
+        object-position: top;
         
     }
    
@@ -399,6 +405,9 @@
         height: 270px;
     }
 
+    .home-gallery-grid {
+        grid-template-columns: repeat(1, 1fr); /* Full width images for very small screens */
+    }
    
 
 }

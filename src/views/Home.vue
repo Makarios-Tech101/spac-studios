@@ -123,7 +123,34 @@ const gallerySlides = ref([
 ]);
 
 
+const galleryImages = ref([
+  { src: "/images/img29.jpg", alt: "Gallery Image 1" },
+  { src: "/images/img16.jpg", alt: "Gallery Image 2" },
+  { src: "/images/img8.jpg", alt: "Gallery Image 3" },
+  { src: "/images/img30.jpg", alt: "Gallery Image 4" },
+  { src: "/images/img28.jpg", alt: "Gallery Image 5" },
+  { src: "/images/img24.jpg", alt: "Gallery Image 6" },
+  { src: "/images/img31.jpg", alt: "Gallery Image 7" },
+  { src: "/images/service1.jpg", alt: "Gallery Image 8" },
+  { src: "/images/service2.jpg", alt: "Gallery Image 9" },
+  { src: "/images/img15.jpg", alt: "Gallery Image 10" },
+  { src: "/images/img18.jpg", alt: "Gallery Image 11" },
+  { src: "/images/img33.jpg", alt: "Gallery Image 12" },
+  { src: "/images/img25.jpg", alt: "Gallery Image 13" },
+  { src: "/images/img11.jpg", alt: "Gallery Image 14" },
+  { src: "/images/img35.jpg", alt: "Gallery Image 14" },
+  { src: "/images/img17.jpg", alt: "Gallery Image 14" },
+  { src: "/images/img32.jpg", alt: "Gallery Image 14" },
+  { src: "/images/img34.jpg", alt: "Gallery Image 14" },
+]);
 
+const isModalOpen = ref(false);
+// const selectedImage = ref({});
+
+// const openModal = (image) => {
+//   selectedImage.value = image;
+//   isModalOpen.value = true;
+// };
 
 // Open Modal (works for both Services & Gallery)
 const openModal = (image) => {
@@ -132,6 +159,7 @@ const openModal = (image) => {
     selectedTitle.value = image.title || ""; // Set title if available
   } else {
     selectedImage.value = image;
+    isModalOpen.value = true;
     selectedTitle.value = ""; // No title for gallery images
   }
 };
@@ -351,8 +379,25 @@ onUnmounted(() => {
         </div>
     </div>
     <div class="home-gallery-section">
-      <div>
+      <div class="home-gallery-container">
+        <div class="home-gallery-grid">
+          <div 
+            v-for="(image, index) in galleryImages" 
+            :key="index" 
+            class="gallery-item"
+            @click="openModal(image)"
+            data-aos="fade-up"
+          >
+            <img :src="image.src" :alt="image.alt">
+          </div>
+        </div>
 
+    <!-- Modal -->
+        <div v-if="isModalOpen" class="modal-overlay" @click="isModalOpen = false">
+          <div class="modal-content">
+            <img :src="selectedImage.src" :alt="selectedImage.alt">
+          </div>
+        </div>
       </div>
     </div>
     <div class="booknow-section">
