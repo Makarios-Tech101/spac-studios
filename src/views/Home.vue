@@ -64,7 +64,7 @@ watchEffect(() => {
 
 // const images = ref([
 //   { src: "/images/img12.JPG", title: "Studio Photography" },
-//   { src: "/images/service1.jpg", title: "Wedding Photography" },
+//   { src: "/images/service1.JPG", title: "Wedding Photography" },
 //   { src: "/images/service2.JPG", title: "Child(ren) Photography" },
 //   { src: "/images/service3.jpg", title: "Fashion Photography" },
 //   { src: "/images/img8.JPG", title: "Outdoor Shoots" },
@@ -106,7 +106,7 @@ const testimonials = [
 //   { name: "Portrait & Headshot", img: "/images/img9.jpg" },
 //   { name: "Child Photography", img: "/images/service2.JPG" },
 //   { name: "Fashion Photography", img: "/images/img8.JPG" },
-//   { name: "Weddings & Events", img: "/images/service1.jpg" },
+//   { name: "Weddings & Events", img: "/images/service1.JPG" },
 //   { name: "Corporate Events", img: "/images/jpeg-optimizer_banner-img1.jpg" },
 //   { name: "Outdoor Shoot", img: "/images/img_book.jpg" },
 //   { name: "Product Photography", img: "/images/product.jpg" },
@@ -130,7 +130,7 @@ const galleryImages = ref([
   { src: "/images/img28.JPG", alt: "Gallery Image 5" },
   { src: "/images/img24.JPG", alt: "Gallery Image 6" },
   { src: "/images/img31.jpg", alt: "Gallery Image 7" },
-  { src: "/images/service1.jpg", alt: "Gallery Image 8" },
+  { src: "/images/service1.JPG", alt: "Gallery Image 8" },
   { src: "/images/service2.JPG", alt: "Gallery Image 9" },
   { src: "/images/img15.JPG", alt: "Gallery Image 10" },
   { src: "/images/img18.JPG", alt: "Gallery Image 11" },

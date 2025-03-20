@@ -13,7 +13,7 @@ import "aos/dist/aos.css";
 
 
 const galleries = ref([
-  { src: "/images/service1.jpg", title: "Birthday Shoot" },
+  { src: "/images/service1.JPG", title: "Birthday Shoot" },
   { src: "/images/jpeg-optimizer_banner-img1.jpg", title: "Headshot" },
   { src: "/images/banner-img5.jpg", title: "Studio Shoot" },
   { src: "/images/img1.jpg", title: "Event Shoot" },

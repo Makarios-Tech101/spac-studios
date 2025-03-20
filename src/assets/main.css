@@ -385,6 +385,7 @@ body {
 .close-button {
   position: absolute;
   top: 10px;
+  color: black;
   right: 10px;
   background: none;
   border: none;
