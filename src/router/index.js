@@ -89,6 +89,16 @@ const router = createRouter({
       ]
      }
   ],
+  scrollBehavior() {
+    return { top: 0 }; // Instantly start at the top
+  }
+  // scrollBehavior(to, from, savedPosition) {
+  //   if (savedPosition) {
+  //     return savedPosition; // If user navigates back, restore scroll position
+  //   } else {
+  //     return { top: 0, behavior: 'smooth' }; // Scroll to top smoothly
+  //   }
+  // }
 })
 
 export default router

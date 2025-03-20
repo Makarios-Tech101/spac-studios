@@ -29,24 +29,24 @@ const testimonials = [
   {
     image: "/images/img3.jpg",
     name: "FEMI OYEBADE",
-    role: "Senior Advocate",
+    role: "Auditor",
     message:
       "We had a wonderful experience during our family shoot. The photographer was so patient with our little ones, and the final pictures were heartwarming. These are moments we’ll treasure forever",
   },
   {
-    image: "/images/service1-c.jpg",
-    name: "FUNMI AINA",
-    role: "Business Owner",
+    image: "/images/img_book.jpg",
+    name: "DEBBY",
+    role: "Student",
     message:
-      "I wanted some professional portraits, and they completely exceeded my expectations. The lighting, the angles, and the editing were all top-notch. I have never felt more confident in front of a camera!",
+      "I wanted some professional portraits, and he completely exceeded my expectations. The lighting, the angles, and the editing were all top-notch. I have never felt more confident in front of a camera!",
   },
-  {
-    image: "/images/img1.jpg",
-    name: "PASCAL EKEH",
-    role: "Senior Advocate, Deloitte",
-    message:
-      "For one who approached Spac Studios unprepared, I got the support I needed. ",
-  }
+  // {
+  //   image: "/images/img1.jpg",
+  //   name: "PASCAL EKEH",
+  //   role: "Senior Advocate, Deloitte",
+  //   message:
+  //     "For one who approached Spac Studios unprepared, I got the support I needed. ",
+  // }
 ];
 
 const handleScroll = () => {

@@ -256,8 +256,24 @@ body {
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
+  width: 10px;
+  height: 10px;
   color: black !important;
 }
+
+/* .swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: var(--swiper-navigation-sides-offset, 15px);
+  left: auto;
+} */
+
+/* .swiper-button-prev {
+  margin-left: -15px; 
+  
+}
+
+.swiper-button-next {
+  margin-right: -10px; 
+} */
 
 .booknow-section {
   margin-bottom: 70px;
@@ -503,7 +519,7 @@ body {
 
 .gallery-carousel-container .image-title {
   position: absolute; /* Places the title on top of the image */
-  bottom: 0px; /* Moves the title slightly above the bottom */
+  top: 2%; /* Moves the title slightly above the bottom */
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -949,6 +965,21 @@ body {
   justify-content: center;
   align-items: center;
   /* min-height: 100vh; */
+}
+
+.pricing-page-section .swiper-button-prev.swiper-button-disabled {
+  width: 0px;
+  height: 20px; 
+}
+
+.pricing-page-section .swiper-button-next {
+  width: 15px;
+  height: 20px; 
+}
+
+.pricing-page-section .swiper-button-prev {
+  width: 15px;
+  height: 20px; 
 }
 
 .pricing-page-container .swiper-wrapper {

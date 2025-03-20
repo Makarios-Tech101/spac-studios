@@ -63,11 +63,11 @@ watchEffect(() => {
 });
 
 // const images = ref([
-//   { src: "/images/img12.jpg", title: "Studio Photography" },
+//   { src: "/images/img12.JPG", title: "Studio Photography" },
 //   { src: "/images/service1.jpg", title: "Wedding Photography" },
-//   { src: "/images/service2.jpg", title: "Child(ren) Photography" },
+//   { src: "/images/service2.JPG", title: "Child(ren) Photography" },
 //   { src: "/images/service3.jpg", title: "Fashion Photography" },
-//   { src: "/images/img8.jpg", title: "Outdoor Shoots" },
+//   { src: "/images/img8.JPG", title: "Outdoor Shoots" },
 //   { src: "/images/product.jpg", title: "Product Photography" },
 // ]);
 
@@ -82,66 +82,65 @@ const testimonials = [
   {
     image: "/images/img3.jpg",
     name: "FEMI OYEBADE",
-    role: "Senior Advocate",
+    role: "Auditor",
     message:
       "We had a wonderful experience during our family shoot. The photographer was so patient with our little ones, and the final pictures were heartwarming. These are moments we’ll treasure forever",
   },
   {
-    image: "/images/service1-c.jpg",
-    name: "FUNMI AINA",
-    role: "Business Owner",
+    image: "/images/img_book.jpg",
+    name: "DEBBY",
+    role: "Student",
     message:
-      "I wanted some professional portraits, and they completely exceeded my expectations. The lighting, the angles, and the editing were all top-notch. I have never felt more confident in front of a camera!",
+      "I wanted some professional portraits, and he completely exceeded my expectations. The lighting, the angles, and the editing were all top-notch. I have never felt more confident in front of a camera!",
   },
-  {
-    image: "/images/img1.jpg",
-    name: "PASCAL EKEH",
-    role: "Senior Advocate, Deloitte",
-    message:
-      "For one who approached Spac Studios unprepared, I got the support I needed. ",
-  }
+  // {
+  //   image: "/images/img1.jpg",
+  //   name: "PASCAL EKEH",
+  //   role: "Senior Advocate, Deloitte",
+  //   message:
+  //     "For one who approached Spac Studios unprepared, I got the support I needed. ",
+  // }
 ];
 
 // const gallerySlides = ref([
 //   { name: "Portrait & Headshot", img: "/images/img9.jpg" },
-//   { name: "Child Photography", img: "/images/service2.jpg" },
-//   { name: "Fashion Photography", img: "/images/img8.jpg" },
+//   { name: "Child Photography", img: "/images/service2.JPG" },
+//   { name: "Fashion Photography", img: "/images/img8.JPG" },
 //   { name: "Weddings & Events", img: "/images/service1.jpg" },
-//   { name: "Birthday Shoots", img: "/images/service4.jpg" },
 //   { name: "Corporate Events", img: "/images/jpeg-optimizer_banner-img1.jpg" },
 //   { name: "Outdoor Shoot", img: "/images/img_book.jpg" },
 //   { name: "Product Photography", img: "/images/product.jpg" },
 // ]);
 const gallerySlides = ref([
-  { img: "/images/img23.jpg", name: "Outdoor Shoot", route: "/outdoor-shoots" },
-  { img: "/images/img24.jpg", name: "Child Photography", route: "/child-photography" },
-  { img: "/images/img26.jpg", name: "Fashion Photography", route: "/fashion-photography" },
-  { img: "/images/img16.jpg", name: "Birthday Shoot", route: "/birthday-shoots" },
+  { img: "/images/img23.JPG", name: "Outdoor Shoot", route: "/outdoor-shoots" },
+  { img: "/images/img24.JPG", name: "Child Photography", route: "/child-photography" },
+  { img: "/images/img15.JPG", name: "Fashion Photography", route: "/fashion-photography" },
+  { img: "/images/img16.JPG", name: "Birthday Shoot", route: "/birthday-shoots" },
   { img: "/images/img25.jpg", name: "Headshot", route: "/portraits-and-headshots" },
-  { img: "/images/img12.jpg", name: "Studio Shoot", route:"/portraits-and-headshots" },
+  { img: "/images/img12.JPG", name: "Studio Shoot", route:"/portraits-and-headshots" },
   { img: "/images/img27.jpg", name: "Event photography", route:"/corporate-events" },
 ]);
 
 
 const galleryImages = ref([
-  { src: "/images/img29.jpg", alt: "Gallery Image 1" },
-  { src: "/images/img16.jpg", alt: "Gallery Image 2" },
-  { src: "/images/img8.jpg", alt: "Gallery Image 3" },
-  { src: "/images/img30.jpg", alt: "Gallery Image 4" },
-  { src: "/images/img28.jpg", alt: "Gallery Image 5" },
-  { src: "/images/img24.jpg", alt: "Gallery Image 6" },
+  { src: "/images/img29.JPG", alt: "Gallery Image 1" },
+  { src: "/images/img16.JPG", alt: "Gallery Image 2" },
+  { src: "/images/img8.JPG", alt: "Gallery Image 3" },
+  { src: "/images/img30.JPG", alt: "Gallery Image 4" },
+  { src: "/images/img28.JPG", alt: "Gallery Image 5" },
+  { src: "/images/img24.JPG", alt: "Gallery Image 6" },
   { src: "/images/img31.jpg", alt: "Gallery Image 7" },
   { src: "/images/service1.jpg", alt: "Gallery Image 8" },
-  { src: "/images/service2.jpg", alt: "Gallery Image 9" },
-  { src: "/images/img15.jpg", alt: "Gallery Image 10" },
-  { src: "/images/img18.jpg", alt: "Gallery Image 11" },
-  { src: "/images/img33.jpg", alt: "Gallery Image 12" },
+  { src: "/images/service2.JPG", alt: "Gallery Image 9" },
+  { src: "/images/img15.JPG", alt: "Gallery Image 10" },
+  { src: "/images/img18.JPG", alt: "Gallery Image 11" },
+  { src: "/images/img33.JPG", alt: "Gallery Image 12" },
   { src: "/images/img25.jpg", alt: "Gallery Image 13" },
-  { src: "/images/img11.jpg", alt: "Gallery Image 14" },
-  { src: "/images/img35.jpg", alt: "Gallery Image 14" },
+  { src: "/images/img11.JPG", alt: "Gallery Image 14" },
+  { src: "/images/img35.JPG", alt: "Gallery Image 14" },
   { src: "/images/img17.jpg", alt: "Gallery Image 14" },
-  { src: "/images/img32.jpg", alt: "Gallery Image 14" },
-  { src: "/images/img34.jpg", alt: "Gallery Image 14" },
+  { src: "/images/img12.JPG", alt: "Gallery Image 14" },
+  { src: "/images/img34.JPG", alt: "Gallery Image 14" },
 ]);
 
 const isModalOpen = ref(false);
@@ -498,12 +497,12 @@ onUnmounted(() => {
     </div>
     <div class="contact-section">
       <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9905.016569687965!2d-0.19122115409877188!3d51.636870671592575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487619cc3ef6a4a1%3A0x518034b5f7d00bad!2sBuckingham%20Ave%2C%20London%2C%20UK!5e0!3m2!1sen!2sng!4v1740335035232!5m2!1sen!2sng"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974.2128380875566!2d0.2846544288050937!3d51.50584081119247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b7525c0642ad%3A0xd5dbb89871591993!2sDanbury%20Cres%2C%20South%20Ockendon%2C%20UK!5e0!3m2!1sen!2sng!4v1742444094437!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
       <div class="contact-details">
          <h4>Reach Out To Us</h4>
-         <h6>456 Main street, Buckingham Av. XV34 London</h6>
+         <h6>Danbury Crescent, South Ockendon. RM15 5XF Essex Uk</h6>
          <p>+44 7507 971045</p>
          <p>info@spacstudios.co.uk</p>
          <router-link to="/contact">

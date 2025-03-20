@@ -405,9 +405,27 @@
         height: 270px;
     }
 
-    .home-gallery-grid {
-        grid-template-columns: repeat(1, 1fr); /* Full width images for very small screens */
+    .home-gallery-section {
+        margin-bottom: 50px;
     }
+
+    .home-gallery-grid {
+        grid-template-columns: repeat(1, 1fr); 
+        gap: 30px;
+       
+    }
+    
+    .home-gallery-grid .gallery-item {
+        width: 85%;
+        margin: 0px auto; 
+    }
+
+    .home-gallery-grid .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
    
 
 }
