@@ -164,10 +164,10 @@ body {
 
 /* Testimonial section */
 .testimonial-section {
-  margin: 0px auto 70px auto;
+  margin: 0px auto 0px auto;
   width: 90%;
   /* padding-bottom: 30px; */
-  background-color: white;
+  background-color: transparent;
 }
 
 .testimonial-title {
@@ -196,6 +196,10 @@ body {
   width: 55px;
   background-color: #111;
 }
+:root {
+  --swiper-navigation-size: 30px;
+}
+
 
 .testimonial-title h4:after {
   content: "";
@@ -208,26 +212,36 @@ body {
   background-color: #333;
 }
 
+.testimonial-section .swiper-wrapper {
+  padding-bottom: 20px;
+  height: 350px;
+}
+
 /* Adjusting Swiper navigation buttons */
 .testimonial-container .swiper-button-prev,
 .testimonial-container .swiper-button-next {
   position: absolute;
-  /* bottom: 10%;  */
-  top: 5%; 
-  transform: translateY(50%); /* Ensures buttons do not overlap content */
-  z-index: 10; 
+  bottom: 0%; 
+  /* top: 5%;  */
+  transform: translateY(230%); /* Ensures buttons do not overlap content */
+  z-index: 1000; 
   color: #000; 
-  width: 10px;
 }
 
 /* Positioning the prev button */
 .testimonial-container .swiper-button-prev {
-  left: -0%;
+  left: 10%;
+}
+
+/* If you need to target only specific buttons */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px !important; /* Adjust size if needed */
 }
 
 /* Positioning the next button */
 .testimonial-container .swiper-button-next {
-  right: 5%;
+  right: 10%;
 }
 
 /* Ensure buttons are visible when disabled */
