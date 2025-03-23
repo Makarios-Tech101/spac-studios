@@ -2,7 +2,7 @@
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import '../assets/main.css';
-import { ref,  watchEffect, onMounted, onUnmounted } from "vue";
+import { ref, computed, watchEffect, onMounted, onUnmounted } from "vue";
 // import { Swiper, SwiperSlide } from "swiper/vue";
 // import "swiper/css";
 // import "swiper/css/pagination";
