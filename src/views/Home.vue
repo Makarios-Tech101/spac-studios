@@ -334,8 +334,8 @@ onUnmounted(() => {
                 :slides-per-view="4"
                 :space-between="0"
                 :loop="true"
-                :speed="200"
-                :effect="'slide'"
+                :speed="800"
+                :effect="'fade'"
                 :breakpoints="{
                     320: { slidesPerView: 1 },  
                     500: { slidesPerView: 2 },  
@@ -343,7 +343,7 @@ onUnmounted(() => {
                     992: { slidesPerView: 3 },  
                     1024: { slidesPerView: 4 }   
                 }"
-                :autoplay="{ delay: 1800, disableOnInteraction: false }"
+                :autoplay="{ delay: 2000, disableOnInteraction: false }"
                 class="gallery-carousel-slider"
                 data-aos="fade-up" data-aos-duration="2000"
               >
