@@ -2,7 +2,7 @@
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import '../../assets/main.css';
-import { ref, onMounted, onUnmounted } from "vue";
+import { ref, computed, onMounted, onUnmounted } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -12,6 +12,23 @@ import { Autoplay, Pagination, EffectFade, Navigation  } from "swiper/modules";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+const message = "Hello! Thank you for contacting Spac Studios.\n\n" +
+  "How can we help you today?\n\n" +
+  "Please select the type of photography service you're interested in:\n" +
+  "1 Portraits & Headshots\n" +
+  "2 Wedding & Events\n" +
+  "3 Birthday Shoots\n" +
+  "4 Child Photography\n" +
+  "5 Corporate Events\n" +
+  "6 Fashion Photography\n" +
+  "7 Outdoor Shoots\n" +
+  "8 Product Photography\n\n" +
+  "Kindly reply with the number (1-8) of your preferred service, and we'll guide you through the booking process. We look forward to capturing your special moments! ";
+
+const whatsappNumber = "447507971045"; // Replace with your WhatsApp number (remove +)
+const whatsappLink = computed(() => {
+  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+});
 
 const serviceImages= ref([
    { src: "/images/img28.JPG",},
@@ -114,7 +131,7 @@ onUnmounted(() => {
                   We guide you through every step, from posing to 
                   lighting, to capture a timeless shot that speaks volumes.
                </p>
-               <a href="https://wa.me/447507971045" target="_blank">
+               <a :href="whatsappLink" target="_blank">
                     Book Now
                </a>
             </div>
@@ -192,7 +209,7 @@ onUnmounted(() => {
           <h4>Reach Out To Us</h4>
           <h6>Danbury Crescent, South Ockendon. RM15 5XF Essex Uk</h6>
           <p>+44 7507 971045</p>
-          <p>info@spacstudios.co.uk</p>
+          <!-- <p>info@spacstudios.co.uk</p> -->
           <router-link to="/contact">
             <button>Contact Form</button>
          </router-link>
@@ -203,7 +220,7 @@ onUnmounted(() => {
       </div>
      <!-- WhatsApp Floating Button -->
       <div>
-          <a href="https://wa.me/447507971045" target="_blank" class="whatsapp-button">
+          <a :href="whatsappLink" target="_blank" class="whatsapp-button">
               <img src="/images/WhatsApp_icon.png" alt="WhatsApp">
           </a>
       </div>  

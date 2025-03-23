@@ -399,6 +399,9 @@
 
     .booknow-section {
         height: 270px;
+        background-image: url("/images/booknow_background.png");
+        background-position-x: 70%;
+        /* background-size: cover;   */
     }
       
     .booknow-container {

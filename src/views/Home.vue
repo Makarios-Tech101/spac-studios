@@ -3,7 +3,7 @@ import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import '../assets/main.css';
 import '../assets/responsive.css';
-import { ref,  watchEffect, onMounted, onUnmounted } from "vue";
+import { ref, computed, watchEffect, onMounted, onUnmounted } from "vue";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -22,6 +22,24 @@ const selectedImage = ref(null);
 const selectedTitle = ref("");
 const showScrollTop = ref(false);
 const activeIndex = ref(null);
+
+const message = "Hello! Thank you for contacting Spac Studios.\n\n" +
+  "How can we help you today?\n\n" +
+  "Please select the type of photography service you're interested in:\n" +
+  "1 Portraits & Headshots\n" +
+  "2 Wedding & Events\n" +
+  "3 Birthday Shoots\n" +
+  "4 Child Photography\n" +
+  "5 Corporate Events\n" +
+  "6 Fashion Photography\n" +
+  "7 Outdoor Shoots\n" +
+  "8 Product Photography\n\n" +
+  "Kindly reply with the number (1-8) of your preferred service, and we'll guide you through the booking process. We look forward to capturing your special moments! ";
+
+const whatsappNumber = "447507971045"; // Replace with your WhatsApp number (remove +)
+const whatsappLink = computed(() => {
+  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+});
 
 const slides = ref([
   {
@@ -288,7 +306,7 @@ onUnmounted(() => {
           <div class="text-content">
             <h1>{{ typedTitle }}</h1>
             <p>{{ slide.description }}</p>
-            <a href="https://wa.me/447507971045" target="_blank"  class="cta-button">
+            <a :href="whatsappLink" target="_blank"  class="cta-button">
               Book Now
             </a>
           </div>
@@ -316,6 +334,8 @@ onUnmounted(() => {
                 :slides-per-view="4"
                 :space-between="0"
                 :loop="true"
+                :speed="200"
+                :effect="'slide'"
                 :breakpoints="{
                     320: { slidesPerView: 1 },  
                     500: { slidesPerView: 2 },  
@@ -323,7 +343,7 @@ onUnmounted(() => {
                     992: { slidesPerView: 3 },  
                     1024: { slidesPerView: 4 }   
                 }"
-                :autoplay="{ delay: 1500, disableOnInteraction: false }"
+                :autoplay="{ delay: 1800, disableOnInteraction: false }"
                 class="gallery-carousel-slider"
                 data-aos="fade-up" data-aos-duration="2000"
               >
@@ -413,7 +433,7 @@ onUnmounted(() => {
               it's a portrait, an event, or a brand shoot, 
               we bring creativity and passion to every frame.
             </p>
-            <a href="https://wa.me/447507971045" target="_blank" class="book-now">
+            <a :href="whatsappLink" target="_blank" class="book-now">
               Book Now
             </a>
          </div>
@@ -497,14 +517,13 @@ onUnmounted(() => {
     </div>
     <div class="contact-section">
       <div class="contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974.2128380875566!2d0.2846544288050937!3d51.50584081119247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b7525c0642ad%3A0xd5dbb89871591993!2sDanbury%20Cres%2C%20South%20Ockendon%2C%20UK!5e0!3m2!1sen!2sng!4v1742444094437!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974.2128380875566!2d0.2846544288050937!3d51.50584081119247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8b7525c0642ad%3A0xd5dbb89871591993!2sDanbury%20Cres%2C%20South%20Ockendon%2C%20UK!5e0!3m2!1sen!2sng!4v1742444094437!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="contact-details">
          <h4>Reach Out To Us</h4>
          <h6>Danbury Crescent, South Ockendon. RM15 5XF Essex Uk</h6>
          <p>+44 7507 971045</p>
-         <p>info@spacstudios.co.uk</p>
+         <!-- <p>info@spacstudios.co.uk</p> -->
          <router-link to="/contact">
             <button>Contact Form</button>
          </router-link>
@@ -524,7 +543,7 @@ onUnmounted(() => {
     </div>
        <!-- WhatsApp Floating Button -->
     <div>
-      <a href="https://wa.me/447507971045" target="_blank" class="whatsapp-button">
+      <a :href="whatsappLink" target="_blank" class="whatsapp-button">
         <img src="/images/WhatsApp_icon.png" alt="WhatsApp">
       </a>
     </div>  

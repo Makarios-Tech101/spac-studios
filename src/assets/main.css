@@ -106,14 +106,17 @@ body {
   right: 0;
 }
 
-.swiper-pagination-bullet-active {
-  opacity: var(--swiper-pagination-bullet-opacity, 1);
-  background: white;
+.swiper-pagination-bullet {
+  background: #eaeaea !important;
 }
 
+/* .swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background: white;
+} */
+
 .swiper-pagination-bullet-active {
-  background: white !important; /* Change active bullet color to white */
-  opacity: 1; /* Ensure it's fully visible */
+  background: white !important; 
 }
 
 .our-service-section {
@@ -163,8 +166,8 @@ body {
 .testimonial-section {
   margin: 0px auto 70px auto;
   width: 90%;
-  padding-bottom: 10px;
-  background-color: transparent;
+  /* padding-bottom: 30px; */
+  background-color: white;
 }
 
 .testimonial-title {
@@ -205,9 +208,33 @@ body {
   background-color: #333;
 }
 
-.testimonial-container {
-  width: 100%;
-  margin: auto;
+/* Adjusting Swiper navigation buttons */
+.testimonial-container .swiper-button-prev,
+.testimonial-container .swiper-button-next {
+  position: absolute;
+  /* bottom: 10%;  */
+  top: 5%; 
+  transform: translateY(50%); /* Ensures buttons do not overlap content */
+  z-index: 10; 
+  color: #000; 
+  width: 10px;
+}
+
+/* Positioning the prev button */
+.testimonial-container .swiper-button-prev {
+  left: -0%;
+}
+
+/* Positioning the next button */
+.testimonial-container .swiper-button-next {
+  right: 5%;
+}
+
+/* Ensure buttons are visible when disabled */
+.testimonial-container .swiper-button-prev.swiper-button-disabled,
+.testimonial-container .swiper-button-next.swiper-button-disabled {
+  opacity: 0.5; /* Reduce opacity instead of hiding */
+  pointer-events: none;
 }
 
 .testimonial-slider {
@@ -217,7 +244,7 @@ body {
 .testimonial-card {
   display: flex;
   align-items: center;
-  background: #fff;
+  background: transparent;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -489,6 +516,11 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.gallery-carousel-slider .swiper-wrapper {
+  transition-timing-function: ease-in-out !important;
+}
+
 
 .gallery-carousel-card {
   position: relative;
