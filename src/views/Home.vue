@@ -76,8 +76,13 @@ const typeTitle = (text) => {
 };
 
 // Watch for slide change and update typed title
+// watchEffect(() => {
+//   typeTitle(slides.value[currentSlideIndex.value].title);
+// });
+
+// Update typedTitle when slide changes
 watchEffect(() => {
-  typeTitle(slides.value[currentSlideIndex.value].title);
+  typedTitle.value = slides.value[currentSlideIndex.value]?.title || "";
 });
 
 // const images = ref([
