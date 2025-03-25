@@ -55,7 +55,7 @@
                             <img src="/images/service1-c.jpg" id="img3">
                     </a>     
                     <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                            <img src="/images/img3.jpg">
+                            <img src="/images/banner-img6.jpg">
                     </a>     
                     <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                             <img src="/images/img20.jpg" id="img5">
