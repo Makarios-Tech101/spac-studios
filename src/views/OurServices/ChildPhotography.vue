@@ -47,7 +47,7 @@ const testimonials = [
       "The process was smooth, and the results were outstanding! He knew exactly how to bring out the best in each shot, and now my LinkedIn profile looks so much more professional!. Looking forward to working with Spac Studios again.",
   },
   {
-    image: "/images/img3.jpg",
+    image: "/images/img36.jpg",
     name: "FEMI OYEBADE",
     role: "Auditor",
     message:
