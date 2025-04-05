@@ -70,7 +70,10 @@
        <div class="footer-second-section">
             <div class="copyright-container">
                 <p>
-                    COPYRIGHT © 2024 SPAC STUDIOS. ALL RIGHT RESERVED. POWERED BY MAROSN INTELLIGENCE
+                    COPYRIGHT © 2024 SPAC STUDIOS. ALL RIGHT RESERVED. POWERED BY 
+                    <a href="https://wa.me/2349161038393" target="_blank" rel="noopener">
+                        MAROSN INTELLIGENCE
+                    </a>
                 </p>
             </div>
        </div>
@@ -187,6 +190,12 @@
     margin: 0px;
     color: rgb(210, 210, 210);
     font-size: 10px;
+}
+
+.copyright-container a {
+    cursor: pointer;
+    color: rgb(210, 210, 210);
+    text-decoration: none;
 }
 
 
