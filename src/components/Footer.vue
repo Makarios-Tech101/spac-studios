@@ -1,5 +1,4 @@
 
-
 <template>
     <footer>
        <div class="footer-first-section">
@@ -44,25 +43,24 @@
                 <div class="instagram-container">
                     <h4>INSTAGRAM POSTS</h4>
                     <div class="instagram-image-grid">
-                        
-                    <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                            <img src="/images/jpeg-optimizer_banner-img1.jpg" id="img1">
-                    </a>     
-                    <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                            <img src="/images/jpeg-optimizer_banner-img2.jpg" >
-                    </a>     
-                    <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                            <img src="/images/service1-c.jpg" id="img3">
-                    </a>     
-                    <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                            <img src="/images/banner-img6.jpg">
-                    </a>     
-                    <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                            <img src="/images/img20.jpg" id="img5">
-                    </a>     
-                    <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                            <img src="/images/banner-img3.jpg" id="img5">
-                    </a>     
+                        <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="/images/jpeg-optimizer_banner-img1.jpg" id="img1">
+                        </a>     
+                        <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="/images/jpeg-optimizer_banner-img2.jpg" >
+                        </a>     
+                        <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="/images/img38.png" id="img3">
+                        </a>     
+                        <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="/images/img25.jpg">
+                        </a>     
+                        <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="/images/img20.jpg" id="img5">
+                        </a>     
+                        <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                                <img src="/images/banner-img3.jpg" id="img5">
+                        </a>     
                     </div>
                 </div>
             </div>
@@ -156,19 +154,28 @@
 }
 
 .instagram-image-grid {
-    /* display: flex; */
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); */
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: auto auto auto;
+    justify-content: flex-start;
     gap: 3px;
+}
+
+.instagram-image-grid a{
+    width: 80px;           
+    height: 80px;
 }
 
 
 .instagram-container img{
-    width: 100%; 
-    height: 70px; 
-    object-fit: cover;
+    /* width: 100%;  */
+    /* height: 70px;  */
+    /* object-fit: cover;
+    aspect-ratio: 1 / 1; */
+    width: 80px;           
+    height: 80px;         
+    object-fit: cover;   
+    transition: 0.3s ease;
 }
 
 .instagram-container img:hover{
