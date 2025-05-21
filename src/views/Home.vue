@@ -268,6 +268,10 @@ onUnmounted(() => {
   window.removeEventListener("scroll", handleScroll);
 });
 
+const highlightPrice = (text) => {
+  return text.replace(/£\d+/g, (match) => `<strong>${match}</strong>`);
+};
+
 </script>
 
 
@@ -374,12 +378,19 @@ onUnmounted(() => {
                 <div class="accordion-content" v-if="activeIndex === index">
                   <router-link to="/pricing">
                     <ul>
+                      <li v-for="(item, index) in option.description" :key="index">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11" color="currentColor"/>
+                         </svg>
+                        <span v-html="highlightPrice(item)"></span>
+                      </li>
+                    </ul>
+                    <!-- <ul>
                        <li v-for="(item, i) in option.description" :key="i">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 14.5s1.5 0 3.5 3.5c0 0 5.559-9.167 10.5-11" color="currentColor"/>
                         </svg>
                         {{ item }}
                       </li>
-                    </ul>
+                    </ul> -->
                   </router-link>
                 </div>
               </div>
