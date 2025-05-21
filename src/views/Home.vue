@@ -65,10 +65,7 @@ const typeTitle = (text) => {
   }, 100); // Adjust typing speed (milliseconds per letter)
 };
 
-// Watch for slide change and update typed title
-// watchEffect(() => {
-//   typeTitle(slides.value[currentSlideIndex.value].title);
-// });
+
 
 // Update typedTitle when slide changes
 watchEffect(() => {
@@ -206,11 +203,11 @@ const pricingOptions = ref([
     description: [
       "Studio | Birthday | Outdoor ",
       "⁠90 mins Shoot",
-      "2 Outfits",
-      "7 Hi-Res Retouched Images ",
+      "Up to 2 Outfits",
+      "8 Hi-Res Retouched Images ",
       "1 Individual ",
       "Digital Access To Image Files ",
-      "£150"
+      "£220"
     ],
   },
   {
@@ -220,21 +217,21 @@ const pricingOptions = ref([
       "Family Shoot",
       "120 mins Shoot",
       "Up To 3 Outfits",
-      "15 Hi-Res Retouched Images ",
+      "16 Hi-Res Retouched Images ",
       "Up To 4 Individuals ",
       "Extra £30 For 4+ Individuals",
       "⁠Styling & Posing Guide",
       "Digital access to image files",
-      "£280",
+      "£350",
     ],
   },
   {
     title: "Event Package",
     // price: "",
     description: [
-      "1st Hour £150",
+      "1st Hour £120",
       "15 Edited Photos Per Hour",
-      "Additional Hour £70",
+      "Additional Hour £80",
     ],
   },
   {

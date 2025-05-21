@@ -37,13 +37,13 @@ const pricingPlans = ref([
   },
   {
     title: "CLASSIC PACKAGE",
-    price: "£150",
+    price: "£220",
     // per: "/ H",
     features: [
       { text: "Studio | Birthday | Outdoor ", available: true },
       { text: "⁠90 mins Shoot", available: true },
-      { text: "2 Outfits", available: true },
-      { text: "7 Hi-Res Retouched Images ", available: true },
+      { text: "Up to 2 Outfits", available: true },
+      { text: "8 Hi-Res Retouched Images ", available: true },
       { text: "1 Individual ", available: true },
       { text: "Digital Access To Image Files", available: true },
     ],
@@ -51,13 +51,13 @@ const pricingPlans = ref([
   {
     title: "DELUXE PACKAGE",
     // subtitle: "EQUIPMENTS & ASSISTANTS",
-    price: "£280",
+    price: "£350",
     // per: "/ H",
     features: [
       { text: "Family Shoot", available: true },
       { text: "120 mins Shoot", available: true },
       { text: "Up To 3 Outfits", available: true },
-      { text: "15 Hi-Res Retouched Images", available: true },
+      { text: "16 Hi-Res Retouched Images", available: true },
       { text: "Up To 4 Individuals", available: true },
       { text: "Extra £30 For 4+ Individuals", available: true },
       { text: "⁠Styling & Posing Guide", available: true },
@@ -66,11 +66,11 @@ const pricingPlans = ref([
   },
   {
     title: "EVENT PACKAGE",
-    price: "1st Hour £150",
+    price: "1st Hour £120",
     // per: "/ H",
     features: [
       { text: "15 Edited Photos Per Hour", available: true },
-      { text: "Additional hour £70", available: true },
+      { text: "Additional hour £80", available: true },
     ],
   },
   {
