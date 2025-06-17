@@ -21,13 +21,19 @@ const whatsappLink = computed(() => {
 
 
 const galleries = ref([
+  { src: "/images/child-pic3.jpg", title: "Child Photography" },
+  { src: "/images/child-pic4.jpg", title: "Child Photography" },
   { src: "/images/service1.JPG", title: "Birthday Shoot" },
   { src: "/images/jpeg-optimizer_banner-img1.jpg", title: "Headshot" },
   { src: "/images/banner-img5.jpg", title: "Studio Shoot" },
   { src: "/images/img1.jpg", title: "Event Shoot" },
   { src: "/images/img18.JPG", title: "Family Portrait" },
-  { src: "/images/img19.jpg", title: "Child Photography" },
-  { src: "/images/img20.jpg", title: "Child Photography" },
+  { src: "/images/outdoor1.jpg", title: "Outdoor Shoot" },
+  { src: "/images/outdoor2.jpg", title: "Outdoor Shoot" },
+  // { src: "/images/img19.jpg", title: "Child Photography" },
+  // { src: "/images/img20.jpg", title: "Child Photography" },
+  { src: "/images/child-pic1.jpg", title: "Child Photography" },
+  { src: "/images/child-pic2.jpg", title: "Child Photography" },
   { src: "/images/img_book.jpg", title: "Fashion Photography" },
   { src: "/images/service2.JPG", title: "Child Photography" },
   { src: "/images/img11.JPG", title: "Studio Shoot" },
@@ -35,6 +41,9 @@ const galleries = ref([
   { src: "/images/img8.JPG", title: "Fashion Photography" },
   { src: "/images/img12.JPG", title: "Studio Shoot" },
   { src: "/images/img14.jpg", title: "Birthday Shoot" },
+  { src: "/images/event1.JPG", title: "Event" },
+  { src: "/images/event3.JPG", title: "Event" },
+  { src: "/images/event2.jpg", title: "event" },
   { src: "/images/img15.JPG", title: "Fashion Photography" },
   { src: "/images/img17.jpg", title: "Birthday Shoot" },
   { src: "/images/img21.jpg", title: "Child Photography" },
@@ -46,6 +55,8 @@ const galleries = ref([
   { src: "/images/img23.JPG", title: "Outdoor Shoot" },
   { src: "/images/img23.JPG", title: "Headshot" },
   { src: "/images/img15.JPG", title: "Fashion Photography" },
+
+  
   
 ]);
 
