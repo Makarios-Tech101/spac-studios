@@ -151,12 +151,13 @@ const galleryImages = ref([
   { src: "/images/service1.JPG", alt: "Gallery Image 8" },
   { src: "/images/service2.JPG", alt: "Gallery Image 9" },
    { src: "/images/outdoor2.jpg", alt: "Gallery Image 13" },
-  { src: "/images/event1.JPG", alt: "Gallery Image 14" },
   { src: "/images/img15.JPG", alt: "Gallery Image 10" },
   { src: "/images/img18.JPG", alt: "Gallery Image 11" },
   { src: "/images/img17.jpg", alt: "Gallery Image 14" },
   { src: "/images/img12.JPG", alt: "Gallery Image 14" },
   { src: "/images/img34.JPG", alt: "Gallery Image 14" },
+  { src: "/images/img25.jpg", alt: "Gallery Image 14" },
+
 ]);
 
 const isModalOpen = ref(false);
