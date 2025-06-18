@@ -852,8 +852,9 @@ body {
 
 .our-services-gallery-grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 Columns */
-  grid-auto-rows: 450px; /* Adjust height */
+  grid-template-columns: repeat(3, 1fr); 
+  /* grid-template-columns: auto auto auto;  */
+  /* grid-auto-rows: 400px;  */
   gap: 10px;
   margin-bottom: 30px;
   height: 100%;

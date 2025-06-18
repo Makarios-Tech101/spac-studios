@@ -155,7 +155,8 @@ const galleryImages = ref([
   { src: "/images/img18.JPG", alt: "Gallery Image 11" },
   { src: "/images/img17.jpg", alt: "Gallery Image 14" },
   { src: "/images/img12.JPG", alt: "Gallery Image 14" },
-  { src: "/images/img34.JPG", alt: "Gallery Image 14" },
+  // { src: "/images/img34.JPG", alt: "Gallery Image 14" },
+  { src: "/images/event2.jpg", alt: "Gallery Image 14" },
   { src: "/images/img25.jpg", alt: "Gallery Image 14" },
 
 ]);
