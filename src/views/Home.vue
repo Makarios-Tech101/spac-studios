@@ -38,15 +38,16 @@ const slides = ref([
     image: "/images/banner-img6.jpg",
   },
   {
+    title: "CHERISHED CHILDHOOD MEMORIES",
+    description: "Delight in timeless portraits that celebrate the innocence and joy of childhood.",
+    image: "/images/child-pic4-banner.jpg",
+  },
+  {
     title: "CREATIVE STUDIO SHOOTS",
     description: "Explore artistic expressions with our expert studio photography.",
     image: "/images/banner-img2.jpg",
   },
-  {
-    title: "CHERISHED CHILDHOOD MEMORIES",
-    description: "Delight in timeless portraits that celebrate the innocence and joy of childhood.",
-    image: "/images/child-pic4.jpg",
-  }
+  
   // {
   //   title: "EVENT COVERAGE EXPERTS",
   //   description: "From corporate events to private celebrations, we capture it all.",
@@ -138,21 +139,21 @@ const gallerySlides = ref([
 
 
 const galleryImages = ref([
+  { src: "/images/outdoor2.jpg", alt: "Gallery Image 12" },
   { src: "/images/img29.JPG", alt: "Gallery Image 1" },
   { src: "/images/img16.JPG", alt: "Gallery Image 2" },
+  { src: "/images/child-pic4.jpg", alt: "Gallery Image 6" },
   { src: "/images/img8.JPG", alt: "Gallery Image 3" },
   { src: "/images/img30.JPG", alt: "Gallery Image 4" },
+    { src: "/images/child-pic1.jpg", alt: "Gallery Image 14" },
   { src: "/images/img28.JPG", alt: "Gallery Image 5" },
-  { src: "/images/child-pic4.jpg", alt: "Gallery Image 6" },
   { src: "/images/studio1.JPG", alt: "Gallery Image 7" },
   { src: "/images/service1.JPG", alt: "Gallery Image 8" },
   { src: "/images/service2.JPG", alt: "Gallery Image 9" },
+   { src: "/images/outdoor2.jpg", alt: "Gallery Image 13" },
+  { src: "/images/event1.JPG", alt: "Gallery Image 14" },
   { src: "/images/img15.JPG", alt: "Gallery Image 10" },
   { src: "/images/img18.JPG", alt: "Gallery Image 11" },
-  { src: "/images/child-pic3.jpg", alt: "Gallery Image 12" },
-  { src: "/images/img25.jpg", alt: "Gallery Image 13" },
-  { src: "/images/img11.JPG", alt: "Gallery Image 14" },
-  { src: "/images/child-pic1.jpg", alt: "Gallery Image 14" },
   { src: "/images/img17.jpg", alt: "Gallery Image 14" },
   { src: "/images/img12.JPG", alt: "Gallery Image 14" },
   { src: "/images/img34.JPG", alt: "Gallery Image 14" },
