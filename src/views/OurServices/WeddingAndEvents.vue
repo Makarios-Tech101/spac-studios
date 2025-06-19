@@ -25,8 +25,7 @@ const serviceImages= ref([
    { src: "/images/img27.jpg",},
    { src: "/images/event1.JPG",},
    { src: "/images/event3.JPG",},
-    // { src: "/images/img27.jpg",},
-    //  { src: "/images/event1.JPG",},
+   { src: "/images/event2.jpg",},
 
 ]);
 
