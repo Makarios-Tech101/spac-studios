@@ -24,10 +24,10 @@ const showScrollTop = ref(false);
 const pricingPlans = ref([
   {
     title: "LITE PACKAGE",
-    price: "£70",
+    price: "£150",
     // per: "/ H",
     features: [
-      { text: "Corporate Headshots", available: true },
+      { text: "Studio | Birthday | Outdoor ", available: true },
       { text: "45 mins Shoot ", available: true },
       { text: "1 Outfit ", available: true },
       { text: "3 Hi-Res Retouched Images ", available: true },
@@ -37,40 +37,41 @@ const pricingPlans = ref([
   },
   {
     title: "CLASSIC PACKAGE",
-    price: "£220",
+    price: "£250",
     // per: "/ H",
     features: [
       { text: "Studio | Birthday | Outdoor ", available: true },
       { text: "⁠90 mins Shoot", available: true },
       { text: "Up to 2 Outfits", available: true },
       { text: "8 Hi-Res Retouched Images ", available: true },
-      { text: "1 Individual ", available: true },
+      { text: "Up to 2 Individual ", available: true },
       { text: "Digital Access To Image Files", available: true },
     ],
   },
   {
     title: "DELUXE PACKAGE",
     // subtitle: "EQUIPMENTS & ASSISTANTS",
-    price: "£350",
+    price: "£400",
     // per: "/ H",
     features: [
       { text: "Family Shoot", available: true },
       { text: "120 mins Shoot", available: true },
       { text: "Up To 3 Outfits", available: true },
-      { text: "16 Hi-Res Retouched Images", available: true },
-      { text: "Up To 4 Individuals", available: true },
-      { text: "Extra £30 For 4+ Individuals", available: true },
+      { text: "22 Hi-Res Retouched Images", available: true },
+      { text: "More than 2 Individuals", available: true },
       { text: "⁠Styling & Posing Guide", available: true },
       { text: "Digital access to image files", available: true },
     ],
   },
   {
     title: "EVENT PACKAGE",
-    price: "1st Hour £120",
+    price: "1 Hour £150",
+    
     // per: "/ H",
     features: [
+      { text: "2 Hours £250", available: true },
       { text: "15 Edited Photos Per Hour", available: true },
-      { text: "Additional hour £80", available: true },
+      { text: "Additional hour £100", available: true },
     ],
   },
   {

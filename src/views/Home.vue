@@ -26,7 +26,7 @@ const activeIndex = ref(null);
 const message = "Hey,\n\n" +
   "I would like to inquire about your photography services"
 
-const whatsappNumber = "447507971045"; // Replace with your WhatsApp number (remove +)
+const whatsappNumber = "447507971045"; 
 const whatsappLink = computed(() => {
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 });
@@ -196,13 +196,13 @@ const pricingOptions = ref([
     title: "Lite Package",
     // price: "£99",
     description: [
-      "Corporate Headshots ",
+      "Studio | Birthday | Outdoor",
       "45 mins Shoot ",
       "1 Outfit ",
       "3 Hi-Res Retouched Images ",
       "1 individual",
       "Digital Access To Image Files ",
-      " £70"
+      "£150"
     ],
   },
   {
@@ -213,9 +213,9 @@ const pricingOptions = ref([
       "⁠90 mins Shoot",
       "Up to 2 Outfits",
       "8 Hi-Res Retouched Images ",
-      "1 Individual ",
+      "Up to 2 Individuals ",
       "Digital Access To Image Files ",
-      "£220"
+      "£250"
     ],
   },
   {
@@ -225,21 +225,21 @@ const pricingOptions = ref([
       "Family Shoot",
       "120 mins Shoot",
       "Up To 3 Outfits",
-      "16 Hi-Res Retouched Images ",
-      "Up To 4 Individuals ",
-      "Extra £30 For 4+ Individuals",
+      "22 Hi-Res Retouched Images ",
+      "More than 2 Individuals ",
       "⁠Styling & Posing Guide",
       "Digital access to image files",
-      "£350",
+      "£400",
     ],
   },
   {
     title: "Event Package",
     // price: "",
     description: [
-      "1st Hour £120",
+      "1 Hour £150",
+      "2 Hours £250",
       "15 Edited Photos Per Hour",
-      "Additional Hour £80",
+      "Additional Hour £100",
     ],
   },
   {
@@ -261,7 +261,7 @@ const toggleAccordion = (index) => {
 };
 
 const handleScroll = () => {
-  showScrollTop.value = window.scrollY > 200; // Show button after scrolling 200px
+  showScrollTop.value = window.scrollY > 200; 
 };
 
 const scrollToTop = () => {
