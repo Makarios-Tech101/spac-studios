@@ -199,7 +199,7 @@ const pricingOptions = ref([
       "Studio | Birthday | Outdoor",
       "45 mins Shoot ",
       "1 Outfit ",
-      "3 Hi-Res Retouched Images ",
+      "8 Hi-Res Retouched Images ",
       "1 individual",
       "Digital Access To Image Files ",
       "£150"
@@ -212,7 +212,7 @@ const pricingOptions = ref([
       "Studio | Birthday | Outdoor ",
       "⁠90 mins Shoot",
       "Up to 2 Outfits",
-      "8 Hi-Res Retouched Images ",
+      "14 Hi-Res Retouched Images ",
       "Up to 2 Individuals ",
       "Digital Access To Image Files ",
       "£250"
