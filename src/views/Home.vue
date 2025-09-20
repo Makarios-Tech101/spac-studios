@@ -35,17 +35,17 @@ const slides = ref([
   {
     title: "CAPTURE THE MOMENT",
     description: "Preserve your special moments with our professional photography services.",
-    image: "/images/banner-img6.jpg",
+    image: "/images/banner-lady.jpg",
   },
   {
     title: "CHERISHED CHILDHOOD MEMORIES",
     description: "Delight in timeless portraits that celebrate the innocence and joy of childhood.",
-    image: "/images/child-pic4-banner.jpg",
+    image: "/images/banner-baby.jpg",
   },
   {
     title: "CREATIVE STUDIO SHOOTS",
     description: "Explore artistic expressions with our expert studio photography.",
-    image: "/images/banner-img2.jpg",
+    image: "/images/banner-amelia.jpg",
   },
   
   // {
@@ -128,36 +128,31 @@ const testimonials = [
 //   { name: "Product Photography", img: "/images/product.jpg" },
 // ]);
 const gallerySlides = ref([
-  { img: "/images/img23.JPG", name: "Outdoor Shoot", route: "/outdoor-shoots" },
+  { img: "/images/outdoorshoot.jpg", name: "Outdoor Shoot", route: "/outdoor-shoots" },
   { img: "/images/child-pic3.jpg", name: "Child Photography", route: "/child-photography" },
-  { img: "/images/img15.JPG", name: "Fashion Photography", route: "/fashion-photography" },
-  { img: "/images/img16.JPG", name: "Birthday Shoot", route: "/birthday-shoots" },
+  { img: "/images/fashionphotography.jpg", name: "Fashion Photography", route: "/fashion-photography" },
+  { img: "/images/birthdayshoot.jpg", name: "Birthday Shoot", route: "/birthday-shoots" },
   { img: "/images/img25.jpg", name: "Headshot", route: "/portraits-and-headshots" },
-  { img: "/images/img12.JPG", name: "Studio Shoot", route:"/portraits-and-headshots" },
-  { img: "/images/img27.jpg", name: "Event photography", route:"/corporate-events" },
+  { img: "/images/studiophotography.jpg", name: "Studio Shoot", route:"/portraits-and-headshots" },
+  { img: "/images/eventphotography.jpg", name: "Event photography", route:"/corporate-events" },
 ]);
 
 
 const galleryImages = ref([
-  { src: "/images/outdoor2.jpg", alt: "Gallery Image 12" },
-  { src: "/images/img29.JPG", alt: "Gallery Image 1" },
-  { src: "/images/img16.JPG", alt: "Gallery Image 2" },
-  { src: "/images/child-pic4.jpg", alt: "Gallery Image 6" },
-  { src: "/images/img8.JPG", alt: "Gallery Image 3" },
-  { src: "/images/img30.JPG", alt: "Gallery Image 4" },
-    { src: "/images/child-pic1.jpg", alt: "Gallery Image 14" },
-  { src: "/images/img28.JPG", alt: "Gallery Image 5" },
-  { src: "/images/studio1.JPG", alt: "Gallery Image 7" },
-  { src: "/images/service1.JPG", alt: "Gallery Image 8" },
-  { src: "/images/service2.JPG", alt: "Gallery Image 9" },
-   { src: "/images/outdoor2.jpg", alt: "Gallery Image 13" },
-  { src: "/images/img15.JPG", alt: "Gallery Image 10" },
-  { src: "/images/img18.JPG", alt: "Gallery Image 11" },
-  { src: "/images/img17.jpg", alt: "Gallery Image 14" },
-  { src: "/images/img12.JPG", alt: "Gallery Image 14" },
-  // { src: "/images/img34.JPG", alt: "Gallery Image 14" },
-  { src: "/images/event2.jpg", alt: "Gallery Image 14" },
-  { src: "/images/img25.jpg", alt: "Gallery Image 14" },
+  { src: "/images/front-gallery8.jpg", alt: "Gallery Image 9" },
+  { src: "/images/outdoor2.jpg", alt: "Gallery Image 1" },
+  { src: "/images/img23.JPG", alt: "Gallery Image 2" },
+
+  { src: "/images/front-gallery2.jpg", alt: "Gallery Image 3" },
+  { src: "/images/front-gallery3.jpg", alt: "Gallery Image 4" },
+  { src: "/images/front-gallery4.jpg", alt: "Gallery Image 5" },
+  { src: "/images/front-gallery5.jpg", alt: "Gallery Image 6" },
+  { src: "/images/front-gallery6.jpg", alt: "Gallery Image 7" },
+  { src: "/images/front-gallery7.jpg", alt: "Gallery Image 8" },
+  
+  { src: "/images/front-gallery1.JPG", alt: "Gallery Image 10" },
+  { src: "/images/img28.JPG", alt: "Gallery Image 11" },
+  { src: "/images/banner-baby.jpg", alt: "Gallery Image 12" },
 
 ]);
 

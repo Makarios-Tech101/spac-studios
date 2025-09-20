@@ -23,9 +23,15 @@ const whatsappLink = computed(() => {
 
 const serviceImages= ref([
    { src: "/images/img27.jpg",},
-   { src: "/images/event1.JPG",},
-   { src: "/images/event3.JPG",},
+   { src: "/images/eventphotography5.jpg",},
+   { src: "/images/eventphotography2.jpg",},
    { src: "/images/event2.jpg",},
+   { src: "/images/eventphotography3.jpg",},
+   { src: "/images/eventphotography4.jpg",},
+    { src: "/images/event1.JPG",},
+   { src: "/images/event3.JPG",},
+   
+
 
 ]);
 

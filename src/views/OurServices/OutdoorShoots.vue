@@ -21,6 +21,7 @@ const whatsappLink = computed(() => {
 });
 
 const serviceImages= ref([
+   { src: "/images/outdoorshoot.jpg",},
    { src: "/images/img5.JPG",},
    { src: "/images/outdoor2.jpg",},
    { src: "/images/img23.JPG",},

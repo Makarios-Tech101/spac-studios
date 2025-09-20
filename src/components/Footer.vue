@@ -47,10 +47,10 @@
                                 <img src="/images/jpeg-optimizer_banner-img1.jpg" id="img1">
                         </a>     
                         <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                                <img src="/images/jpeg-optimizer_banner-img2.jpg" >
+                                <img src="/images/banner-amelia.jpg" >
                         </a>     
                         <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                                <img src="/images/img38.png" id="img3">
+                                <img src="/images/fashionphotography.jpg" id="img3">
                         </a>     
                         <a href= "https://www.instagram.com/spac_studios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
                                 <img src="/images/img25.jpg">
