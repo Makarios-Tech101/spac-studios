@@ -462,7 +462,7 @@
 
 }
 
-@media(max-width: 399px) {
+@media(max-width: 500px) {
     .text-content {
         position: relative;
         margin-top: 30px;
