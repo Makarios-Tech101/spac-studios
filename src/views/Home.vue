@@ -31,6 +31,7 @@ const whatsappLink = computed(() => {
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 });
 
+// title: "CHERISHED CHILDHOOD MEMORIES",
 const slides = ref([
   {
     title: "CAPTURE THE MOMENT",
@@ -38,7 +39,8 @@ const slides = ref([
     image: "/images/banner-lady.jpg",
   },
   {
-    title: "CHERISHED CHILDHOOD MEMORIES",
+    
+    title: "PURE CHILDHOOD MAGIC",
     description: "Delight in timeless portraits that celebrate the innocence and joy of childhood.",
     image: "/images/banner-baby.jpg",
   },
@@ -139,20 +141,19 @@ const gallerySlides = ref([
 
 
 const galleryImages = ref([
+  { src: "/images/front-gallery6.jpg", alt: "Gallery Image 7" },
   { src: "/images/front-gallery8.jpg", alt: "Gallery Image 9" },
+  { src: "/images/front-gallery5.jpg", alt: "Gallery Image 6" },
+  { src: "/images/front-gallery1.JPG", alt: "Gallery Image 10" },
+  { src: "/images/banner-baby.jpg", alt: "Gallery Image 12" },
   { src: "/images/outdoor2.jpg", alt: "Gallery Image 1" },
   { src: "/images/img23.JPG", alt: "Gallery Image 2" },
-
   { src: "/images/front-gallery2.jpg", alt: "Gallery Image 3" },
   { src: "/images/front-gallery3.jpg", alt: "Gallery Image 4" },
   { src: "/images/front-gallery4.jpg", alt: "Gallery Image 5" },
-  { src: "/images/front-gallery5.jpg", alt: "Gallery Image 6" },
-  { src: "/images/front-gallery6.jpg", alt: "Gallery Image 7" },
   { src: "/images/front-gallery7.jpg", alt: "Gallery Image 8" },
-  
-  { src: "/images/front-gallery1.JPG", alt: "Gallery Image 10" },
   { src: "/images/img28.JPG", alt: "Gallery Image 11" },
-  { src: "/images/banner-baby.jpg", alt: "Gallery Image 12" },
+  
 
 ]);
 

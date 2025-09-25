@@ -462,6 +462,19 @@
 
 }
 
+@media(max-width: 399px) {
+    .text-content {
+        position: relative;
+        margin-top: 30px;
+        z-index: 2;
+        max-width: 190px;
+    }
+
+    .text-content p {
+       max-width: 190px;
+    }
+}
+
 @media (min-width: 993px) {
     .mobile-testimonial img{
         display: none;
